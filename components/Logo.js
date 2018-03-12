@@ -19,10 +19,6 @@ const StyledLogo = styled.span`
 
   polygon {
     fill: ${COLORS.WHITE};
-
-    & ~ polygon {
-      fill: ${COLORS.WHITE};
-    }
   }
 `
 
@@ -38,18 +34,6 @@ const SayMyMame = styled.span`
   text-transform: uppercase;
   white-space: nowrap;
   color: ${COLORS.WHITE};
-
-  span {
-    display: inline-block;
-    margin-right: 2px;
-    opacity: 0;
-    transform: translateX(-10px);
-    transition: all 0.45s cubic-bezier(0.645, 0.045, 0.355, 1);
-
-    &:nth-child(7) {
-      margin-right: 8px;
-    }
-  }
 `
 
 const Logo = () => (
