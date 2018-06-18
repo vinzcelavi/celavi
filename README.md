@@ -14,3 +14,21 @@ yarn run dev
 ```
 now
 ```
+
+#### Listing instances
+
+```
+now ls
+```
+
+#### Scaling instances
+
+```
+now scale vincent-bio-fvocsoxsla.now.sh 3 10
+```
+
+#### Using a custom domain
+
+```
+now alias vincent-bio-fvocsoxsla.now.sh vincent.bio
+```
