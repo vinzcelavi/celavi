@@ -1,85 +1,103 @@
-import React, { Component } from 'react'
-import styled from 'styled-components'
-import { space, width } from 'styled-system'
-import { rgba } from 'polished'
+import React, { Component } from "react";
+import styled from "styled-components";
+import { space, width } from "styled-system";
+import { rgba } from "polished";
 
-import FONTS from '../constants/fonts'
-import COLORS from '../constants/colors'
-import Logo, { SayMyMame } from '../components/Logo'
-import Title from '../components/Title'
-import Paragraph from '../components/Paragraph'
-import Link from '../components/Link'
-import Job, { Jobs } from '../components/Job'
-import SwipeLink from '../components/SwipeLink'
-import List, { ListItem } from '../components/List'
-import Social, { SocialLink } from '../components/Social'
+import FONTS from "../constants/fonts";
+import COLORS from "../constants/colors";
+import Logo, { SayMyMame } from "../components/Logo";
+import Title from "../components/Title";
+import Paragraph from "../components/Paragraph";
+import Link from "../components/Link";
+import Job, { Jobs } from "../components/Job";
+import SwipeLink from "../components/SwipeLink";
+import List, { ListItem } from "../components/List";
+import Social, { SocialLink } from "../components/Social";
 
 const Wrapper = styled.div`
   position: relative;
   background-color: ${COLORS.ANTHRACITE};
-`
+`;
 
 const Container = styled.div`
   margin: auto;
-  ${space}
-  ${width}
-`
+  max-width: 1440px;
+  ${space};
+  ${width};
+`;
 
 const Hero = styled.div`
   padding: 10vh 0 0;
-`
+`;
 
 const Content = styled.div`
   margin: auto;
-  ${space}
-  ${width}
-`
+  ${space};
+  ${width};
+`;
 
 const Section = styled.section`
   margin-bottom: 200px;
-`
+`;
 
 const Index = () => (
   <Wrapper>
-    <Container width={['auto', '80%']} px={[30, 0]}>
+    <Container width={["auto", "80%"]} px={[30, 0]}>
       <Logo />
 
       <Hero>
         <Title fontSize={[40, 60, 70]} mb={200}>
-          <strong>Bonjour,</strong><br />
-          Je suis <u>UI/UX Designer</u> et <u>Front-End Developer</u> Freelance à Montpellier, depuis 8 ans.<br />
+          <strong>Bonjour,</strong>
+          <br />
+          Je suis <u>UI/UX Designer</u> et <u>Front-End Developer</u> Freelance
+          à Montpellier, depuis 8 ans.<br />
         </Title>
       </Hero>
 
-      <Content width={['auto', 600]}>
+      <Content width={["auto", 600]}>
         <Section>
           <Title fontSize={[40, 50]}>Expérience</Title>
           <Jobs ml={[0, 40]}>
             <Job>
-              <h2><SwipeLink href="https://www.lunchr.co">Lunchr</SwipeLink></h2>
+              <h2>
+                <SwipeLink href="https://www.lunchr.co">Lunchr</SwipeLink>
+              </h2>
               <h3>2016 - Aujourd'hui</h3>
-              <Paragraph>Intégration des maquettes de l'application web avec ReactJS et styled-components.</Paragraph>
+              <Paragraph>
+                Intégration des maquettes de l'application web avec ReactJS et
+                styled-components.
+              </Paragraph>
             </Job>
             <Job>
-              <h2><SwipeLink href="https://www.elium.tv">Elium</SwipeLink></h2>
+              <h2>
+                <SwipeLink href="https://www.elium.tv">Elium</SwipeLink>
+              </h2>
               <h3>2017</h3>
               <Paragraph>
                 Développement de web components AngularJS et Sass.
               </Paragraph>
             </Job>
             <Job>
-              <h2><SwipeLink href="https://teads.tv">Teads</SwipeLink></h2>
+              <h2>
+                <SwipeLink href="https://teads.tv">Teads</SwipeLink>
+              </h2>
               <h3>2014 - 2016</h3>
               <Paragraph>
-                UI/UX Design et intégration des designs sur le Dashboard de gestion des campagnes.
+                UI/UX Design et intégration des designs sur le Dashboard de
+                gestion des campagnes.
                 <br />
                 Développement de web components AngularJS et Sass.
               </Paragraph>
             </Job>
             <Job>
-              <h2><SwipeLink href="https://stormz.me">Stormz</SwipeLink></h2>
+              <h2>
+                <SwipeLink href="https://stormz.me">Stormz</SwipeLink>
+              </h2>
               <h3>2013 - 2014</h3>
-              <Paragraph>UI/UX Design et développement Front-End de web services en HAML et CSS3.</Paragraph>
+              <Paragraph>
+                UI/UX Design et développement Front-End de web services en HAML
+                et CSS3.
+              </Paragraph>
             </Job>
           </Jobs>
         </Section>
@@ -102,18 +120,26 @@ const Index = () => (
         <Section>
           <Title fontSize={50}>Me contacter</Title>
           <Paragraph mb={60}>
-            Je travaille actuellement à temps plein pour <Link href="https://www.lunchr.co">Lunchr</Link>, donc <strong>je ne suis pas disponible pour une mission</strong>.
-            Mais n'hésitez pas à me contacter sur <Link href="mailto:vincent@celavi.fr">vincent@celavi.fr</Link>, ne serait-ce que pour "dire bonjour" !
+            Je travaille actuellement à temps plein pour{" "}
+            <Link href="https://www.lunchr.co">Lunchr</Link>, donc{" "}
+            <strong>je ne suis pas disponible pour une mission</strong>. Mais
+            n'hésitez pas à me contacter sur{" "}
+            <Link href="mailto:vincent@celavi.fr">vincent@celavi.fr</Link>, ne
+            serait-ce que pour "dire bonjour" !
           </Paragraph>
           <Social>
-            <SocialLink href="https://dribbble.com/vinzcelavi">Dribbble</SocialLink>
+            <SocialLink href="https://dribbble.com/vinzcelavi">
+              Dribbble
+            </SocialLink>
             <SocialLink href="https://github.com/vinzcelavi">Github</SocialLink>
-            <SocialLink href="https://www.twitter.com/vinzcelavi">Twitter</SocialLink>
+            <SocialLink href="https://www.twitter.com/vinzcelavi">
+              Twitter
+            </SocialLink>
           </Social>
         </Section>
       </Content>
     </Container>
   </Wrapper>
-)
+);
 
-export default Index
+export default Index;

@@ -14,10 +14,10 @@
   "dependencies": {
     "add": "^2.0.6",
     "micro": "latest",
-    "next": "^4.2.3",
+    "next": "^6.0.3",
     "polished": "^1.9.2",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
     "react-inlinesvg": "^0.7.5",
     "react-router-dom": "^4.2.2",
     "start": "^5.1.0",
