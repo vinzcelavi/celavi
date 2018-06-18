@@ -1,18 +1,19 @@
-import React, { Component } from "react";
-import styled from "styled-components";
-import { space, width } from "styled-system";
-import { rgba } from "polished";
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import { space, width } from 'styled-system';
+import { rgba } from 'polished';
 
-import FONTS from "../constants/fonts";
-import COLORS from "../constants/colors";
-import Logo, { SayMyMame } from "../components/Logo";
-import Title from "../components/Title";
-import Paragraph from "../components/Paragraph";
-import Link from "../components/Link";
-import Job, { Jobs } from "../components/Job";
-import SwipeLink from "../components/SwipeLink";
-import List, { ListItem } from "../components/List";
-import Social, { SocialLink } from "../components/Social";
+import FONTS from '../constants/fonts';
+import COLORS from '../constants/colors';
+import Logo, { SayMyMame } from '../components/Logo';
+import Title from '../components/Title';
+import Paragraph from '../components/Paragraph';
+import Link from '../components/Link';
+import Job, { Jobs } from '../components/Job';
+import SwipeLink from '../components/SwipeLink';
+import CopyText from '../components/CopyText';
+import List, { ListItem } from '../components/List';
+import Social, { SocialLink } from '../components/Social';
 
 const Wrapper = styled.div`
   position: relative;
@@ -42,7 +43,7 @@ const Section = styled.section`
 
 const Index = () => (
   <Wrapper>
-    <Container width={["auto", "80%"]} px={[30, 0]}>
+    <Container width={['auto', '80%']} px={[30, 0]}>
       <Logo />
 
       <Hero>
@@ -54,7 +55,7 @@ const Index = () => (
         </Title>
       </Hero>
 
-      <Content width={["auto", 600]}>
+      <Content width={['auto', 600]}>
         <Section>
           <Title fontSize={[40, 50]}>Expérience</Title>
           <Jobs ml={[0, 40]}>
@@ -120,12 +121,14 @@ const Index = () => (
         <Section>
           <Title fontSize={50}>Me contacter</Title>
           <Paragraph mb={60}>
-            Je travaille actuellement à temps plein pour{" "}
-            <Link href="https://www.lunchr.co">Lunchr</Link>, donc{" "}
+            Je travaille actuellement à temps plein pour{' '}
+            <Link href="https://www.lunchr.co">Lunchr</Link>, donc{' '}
             <strong>je ne suis pas disponible pour une mission</strong>. Mais
-            n'hésitez pas à me contacter sur{" "}
-            <Link href="mailto:vincent@celavi.fr">vincent@celavi.fr</Link>, ne
-            serait-ce que pour "dire bonjour" !
+            n'hésitez pas à me contacter sur{' '}
+            <CopyText
+              value="&#118;&#105;&#110;&#x63;&#101;&#x6e;&#116;&#64;&#99;&#x65;&#108;&#x61;&#x76;&#105;&#x2e;&#x66;&#x72;"
+              message="copiée"
+            />.
           </Paragraph>
           <Social>
             <SocialLink href="https://dribbble.com/vinzcelavi">
