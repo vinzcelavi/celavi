@@ -125,7 +125,7 @@ const Index = () => (
             <Title fontSize={50}>Me contacter</Title>
             <Paragraph mb={60}>
               Je travaille actuellement à temps plein pour{' '}
-              <Link href="https://www.lunchr.co">Lunchr</Link>, donc{' '}
+              <Link href="https://agilitation.fr/" title="Agilitation">Agilitation</Link>, donc{' '}
               <strong>je ne suis pas disponible pour une mission</strong>. Mais
               n'hésitez pas à me contacter sur{' '}
               <CopyText

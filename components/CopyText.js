@@ -45,7 +45,7 @@ class CopyText extends Component {
   render() {
     return (
       <span>
-        <CopyToClipboard text={this.props.value} onCopy={this.onCopy}>
+        <CopyToClipboard text={this.props.value} onCopy={this.onCopy} title="Copier dans le presse-papier">
           <StyledCopyText>{this.props.value}</StyledCopyText>
         </CopyToClipboard>
 
