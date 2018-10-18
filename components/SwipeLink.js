@@ -19,33 +19,54 @@ const StyledSwipeLink = styled.a`
   transition: all 0.35s ease;
 
   span {
-    z-index: 2;
+    z-index: 20;
     position: relative;
     transition: all 0.35s ease;
   }
 
+  &::before,
   &::after {
-    z-index: 1;
     display: block;
     content: "";
     position: absolute;
     bottom: 0;
-    left: -20%;
+    left: 0;
     width: 80%;
     height: 100%;
-    background-color: ${rgba(COLORS.YELLOW, 0)};
+    background-color: ${COLORS.YELLOW};
+    opacity: 0;
+  }
+
+  &::before {
+    z-index: 10;
+    transform: translateX(-60%);
+    transition: all 0s ease;
+  }
+
+  &::after {
+    z-index: 5;
+    transform: translateX(40%);
     transition: all 0.35s ease;
   }
 
   &:hover {
     span {
       color: ${COLORS.WHITE};
-      transform: translateX(-2px);
+    }
+
+    &::before,
+    &::after {
+      opacity: 1;
+    }
+
+    &::before {
+      transform: translateX(-30%);
+      transition: all 0.35s ease;
     }
 
     &::after {
-      left: -10px;
-      background-color: ${rgba(COLORS.YELLOW, 0.9)};
+      transform: translateX(-30%);
+      transition: all 0s 0.35s ease;
     }
   }
 `
