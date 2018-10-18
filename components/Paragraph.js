@@ -14,6 +14,10 @@ const StyledParagraph = styled.p`
   font-weight: 400;
   color: ${rgba(COLORS.WHITE, 0.8)};
   ${space}
+
+  strong {
+    color: ${COLORS.WHITE};
+  }
 `
 
 const Paragraph = ({ children, ...props }) => (
