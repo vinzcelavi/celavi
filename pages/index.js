@@ -7,7 +7,7 @@ import { rgba } from 'polished';
 import Grid, { GridCell } from '../components/Grid';
 import FONTS from '../constants/fonts';
 import COLORS from '../constants/colors';
-import Logo, { SayMyMame } from '../components/Logo';
+import Header from '../components/Header';
 import Title from '../components/Title';
 import Paragraph from '../components/Paragraph';
 import Link from '../components/Link';
@@ -43,32 +43,6 @@ const Section = styled.section`
   ${width};
 `;
 
-const Home = styled.div`
-  position: relative;
-  margin-bottom: 100px;
-  ${position};
-`;
-
-const Name = styled.h1`
-  margin: 0;
-  padding-top: 10px;
-  font-family: ${FONTS.PRIMARY};
-  font-size: 26px;
-  line-height: 1.5;
-  font-weight: 700;
-  text-transform: lowercase;
-  color: ${COLORS.WHITE};
-`;
-
-const JobTitle = styled.h2`
-  margin: 0;
-  font-family: ${FONTS.PRIMARY};
-  font-size: 18px;
-  line-height: 1.5;
-  font-weight: 400;
-  color: ${rgba(COLORS.WHITE, 0.6)};
-`;
-
 const Hero = styled.header`
   margin: 0;
   margin-bottom: 200px;
@@ -95,10 +69,7 @@ const Index = () => (
     <Container width={['auto', '80%']} px={[30, 0]}>
       <Grid flexDirection={['column', 'column', 'row']}>
         <GridCell width={['auto', 'auto', '33%']}>
-          <Home position={['relative', 'relative', 'fixed']}>
-            <Name>Vincent Bianciotto</Name>
-            <JobTitle>Front-End Designer</JobTitle>
-          </Home>
+          <Header position={['relative', 'relative', 'fixed']} />
         </GridCell>
 
         <GridCell width={['auto', 'auto', '67%']}>
