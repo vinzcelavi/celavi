@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { position } from 'styled-system';
-import FONTS from '../constants/fonts';
-import COLORS from '../constants/colors';
-import ProfilePic from './ProfilePic';
+import { position } from 'styled-system'
+import FONTS from '../constants/fonts'
+import COLORS from '../constants/colors'
+import ProfilePic from './ProfilePic'
 
 const StyledHeader = styled.div`
   position: relative;
@@ -28,10 +28,11 @@ const Name = styled.h1`
 
 const JobTitle = styled.h2`
   margin: 0;
-  font-family: ${FONTS.PRIMARY};
-  font-size: 18px;
+  font-family: ${FONTS.SECONDARY};
+  font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
+  letter-spacing: 0.075em;
   color: ${COLORS.YELLOW};
 `;
 
