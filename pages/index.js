@@ -76,9 +76,8 @@ const Index = () => (
           <Hero fontSize={[30, 40, 50]}>
             Bonjour.
             <br />
-            Je crée des interfaces web ergonomiques et soignées en React. Je
-            fais ce métier avec passion depuis 10 ans. Je suis basé à
-            Montpellier.
+            Je crée des interfaces web ergonomiques et épurées depuis 10 ans.
+            Je suis basé à Montpellier.
           </Hero>
 
           <Section width={['auto', 600]}>
@@ -148,16 +147,13 @@ const Index = () => (
           <Section width={['auto', 600]}>
             <Title fontSize={50}>Me contacter</Title>
             <Paragraph mb={60}>
-              Je travaille à temps plein pour{' '}
-              <Link href="https://agilitation.fr/" title="Agilitation">
-                Agilitation
-              </Link>
-              , cependant n'hésitez pas à me contacter sur{' '}
+              Pour toute demande spécifique, ou juste pour me passer le bonjour,
+              vous pouvez me contacter sur{' '}
               <CopyText
                 value="&#118;&#105;&#110;&#x63;&#101;&#x6e;&#116;&#64;&#99;&#x65;&#108;&#x61;&#x76;&#105;&#x2e;&#x66;&#x72;"
                 message="copiée"
               />
-              .
+              . Je me ferai un plaisir de vous répondre.
             </Paragraph>
             <Social>
               <SocialLink href="https://dribbble.com/vinzcelavi">
