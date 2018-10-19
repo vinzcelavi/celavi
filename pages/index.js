@@ -148,11 +148,11 @@ const Index = () => (
           <Section width={['auto', 600]}>
             <Title fontSize={50}>Me contacter</Title>
             <Paragraph mb={60}>
-              Je travaille actuellement à temps plein pour{' '}
+              Je travaille à temps plein pour{' '}
               <Link href="https://agilitation.fr/" title="Agilitation">
                 Agilitation
               </Link>
-              , mais n'hésitez pas à me contacter sur{' '}
+              , cependant n'hésitez pas à me contacter sur{' '}
               <CopyText
                 value="&#118;&#105;&#110;&#x63;&#101;&#x6e;&#116;&#64;&#99;&#x65;&#108;&#x61;&#x76;&#105;&#x2e;&#x66;&#x72;"
                 message="copiée"

@@ -30,7 +30,7 @@ const StyledJob = styled.li`
     font-family: ${FONTS.PRIMARY};
     font-size: 13px;
     line-height: 1.5;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: ${COLORS.YELLOW};

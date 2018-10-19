@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { position } from 'styled-system';
-import { rgba } from 'polished'
-
 import FONTS from '../constants/fonts';
 import COLORS from '../constants/colors';
 import ProfilePic from './ProfilePic';

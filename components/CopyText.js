@@ -24,7 +24,7 @@ const Message = styled.span`
   padding: 0 6px;
   margin-left: 8px;
   font-size: 13px;
-  color: ${COLORS.ANTHRACITE};
+  color: ${COLORS.WHITE};
   background-color: ${COLORS.YELLOW};
   border-radius: 2px;
 `;
