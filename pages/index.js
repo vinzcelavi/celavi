@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import media from 'styled-media-query';
-import { position, space, width } from 'styled-system';
+import { position, space, width, fontSize } from 'styled-system';
 import { rgba } from 'polished';
 
 import Grid, { GridCell } from '../components/Grid';
@@ -27,11 +27,15 @@ const Wrapper = styled.div`
 `;
 
 const Container = styled.div`
-  padding: 20vh 0 0;
+  padding: 10vh 0 0;
   margin: auto;
   max-width: 1440px;
   ${space};
   ${width};
+
+  ${media.greaterThan('medium')`
+    padding: 20vh 0 0;
+  `}
 `;
 
 const Section = styled.section`
@@ -62,17 +66,18 @@ const JobTitle = styled.h2`
   font-size: 18px;
   line-height: 1.5;
   font-weight: 400;
-  color: ${rgba(COLORS.WHITE, 0.8)};
+  color: ${rgba(COLORS.WHITE, 0.6)};
 `;
 
 const Hero = styled.header`
   margin: 0;
   margin-bottom: 200px;
   font-family: ${FONTS.PRIMARY};
-  font-size: 50px;
+  font-size: 30px;
   line-height: 1.4;
   font-weight: 700;
   color: ${COLORS.WHITE};
+  ${fontSize};
 
   p {
     margin: 0 0 40px;
@@ -87,7 +92,7 @@ const Hero = styled.header`
 
 const Index = () => (
   <Wrapper>
-    <Container width={['auto', '80%']} px={[30, 40]}>
+    <Container width={['auto', '80%']} px={[30, 0]}>
       <Grid flexDirection={['column', 'column', 'row']}>
         <GridCell width={['auto', 'auto', '33%']}>
           <Home position={['relative', 'relative', 'fixed']}>
@@ -97,7 +102,7 @@ const Index = () => (
         </GridCell>
 
         <GridCell width={['auto', 'auto', '67%']}>
-          <Hero>
+          <Hero fontSize={[30, 40, 50]}>
             Bonjour.
             <br />
             Je crée des interfaces web ergonomiques et soignées en React. Je
