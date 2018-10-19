@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import { lighten } from 'polished'
 import FONTS from '../constants/fonts'
 import COLORS from '../constants/colors'
 
@@ -19,14 +19,13 @@ const StyledSwipeLink = styled.a`
   line-height: 1.5;
   font-weight: 700;
   text-decoration: none;
-  color: ${COLORS.WHITE};
+  color: ${COLORS.ANTHRACITE};
   overflow: hidden;
   transition: all 0.35s ${TRANS_FUNCTION};
 
   span {
     z-index: 20;
     position: relative;
-    text-shadow: 0 2px 35px ${COLORS.BLACK};
     transition: all ${TRANS_DURATION_IN} ${TRANS_FUNCTION};
   }
 
@@ -39,7 +38,7 @@ const StyledSwipeLink = styled.a`
     left: 0;
     width: 30%;
     height: 100%;
-    background-color: ${COLORS.YELLOW};
+    background-color: ${lighten(0.1, COLORS.YELLOW)};
   }
 
   &::before {

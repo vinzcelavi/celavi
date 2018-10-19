@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import { position } from 'styled-system';
-import { rgba } from 'polished'
-
 import FONTS from '../constants/fonts';
 import COLORS from '../constants/colors';
 import ProfilePic from './ProfilePic';
@@ -25,7 +23,7 @@ const Name = styled.h1`
   line-height: 1.25;
   font-weight: 700;
   text-transform: lowercase;
-  color: ${COLORS.WHITE};
+  color: ${COLORS.ANTHRACITE};
 `;
 
 const JobTitle = styled.h2`
@@ -34,7 +32,7 @@ const JobTitle = styled.h2`
   font-size: 18px;
   line-height: 1.5;
   font-weight: 400;
-  color: ${rgba(COLORS.WHITE, 0.6)};
+  color: ${COLORS.YELLOW};
 `;
 
 const Header = ({ position }) => (

@@ -13,7 +13,7 @@ const StyledTitle = styled.h1`
   font-size: 40px;
   line-height: 1.5;
   font-weight: 300;
-  color: ${COLORS.WHITE};
+  color: ${COLORS.ANTHRACITE};
   cursor: default;
   ${space};
   ${fontSize};

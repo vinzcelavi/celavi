@@ -8,8 +8,8 @@ import COLORS from '../constants/colors';
 const StyledCopyText = styled.span`
   text-decoration: none;
   font-weight: 700;
-  color: ${COLORS.WHITE};
-  box-shadow: inset 0 -1px 0 ${rgba(COLORS.WHITE, 0.8)};
+  color: ${COLORS.ANTHRACITE};
+  box-shadow: inset 0 -1px 0 ${rgba(COLORS.ANTHRACITE, 0.8)};
   cursor: pointer;
   transition: all 0.25s ease;
 
@@ -24,7 +24,7 @@ const Message = styled.span`
   padding: 0 6px;
   margin-left: 8px;
   font-size: 13px;
-  color: ${COLORS.ANTHRACITE};
+  color: ${COLORS.WHITE};
   background-color: ${COLORS.YELLOW};
   border-radius: 2px;
 `;
