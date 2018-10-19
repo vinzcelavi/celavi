@@ -7,7 +7,7 @@ const PHOTO_SIZE = 150
 
 const StyledProfilePic = styled.div`
   border-radius: 8px;
-  box-shadow: 0 3px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 
   img {
