@@ -93,21 +93,21 @@ const Index = () => (
               </Job>
               <Job>
                 <h2>
-                  <SwipeLink href="https://www.elium.tv">Elium</SwipeLink>
-                </h2>
-                <h3>2017</h3>
-                <Paragraph>
-                  Développement de web components AngularJS et Sass.
-                </Paragraph>
-              </Job>
-              <Job>
-                <h2>
                   <SwipeLink href="https://www.lunchr.co">Lunchr</SwipeLink>
                 </h2>
                 <h3>2016 - 2018</h3>
                 <Paragraph>
                   Intégration des maquettes de l'application web avec ReactJS et
                   styled-components.
+                </Paragraph>
+              </Job>
+              <Job>
+                <h2>
+                  <SwipeLink href="https://www.elium.tv">Elium</SwipeLink>
+                </h2>
+                <h3>2017</h3>
+                <Paragraph>
+                  Développement de web components AngularJS et Sass.
                 </Paragraph>
               </Job>
               <Job>
