@@ -152,13 +152,13 @@ const Index = () => (
               . Je me ferai un plaisir de vous répondre.
             </Paragraph>
             <Social>
-              <SocialLink href="https://dribbble.com/vinzcelavi">
+              <SocialLink href="https://dribbble.com/vinzcelavi" dribbble>
                 Dribbble
               </SocialLink>
               <SocialLink href="https://github.com/vinzcelavi">
                 Github
               </SocialLink>
-              <SocialLink href="https://www.twitter.com/vinzcelavi">
+              <SocialLink href="https://www.twitter.com/vinzcelavi" twitter>
                 Twitter
               </SocialLink>
             </Social>
