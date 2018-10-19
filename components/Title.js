@@ -15,26 +15,8 @@ const StyledTitle = styled.h1`
   font-weight: 300;
   color: ${COLORS.WHITE};
   cursor: default;
-  ${space}
-  ${fontSize}
-
-  strong {
-    font-weight: 500;
-  }
-
-  u {
-    text-decoration: none;
-    padding-bottom: 3px;
-    box-shadow: inset 0 -30px 0 ${rgba(COLORS.WHITE, 0.07)};
-  }
-
-  &,
-  strong,
-  span {
-    &::selection {
-      background-color: ${COLORS.YELLOW};
-    }
-  }
+  ${space};
+  ${fontSize};
 `
 
 const Title = ({ children, ...props }) => (
