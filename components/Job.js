@@ -28,9 +28,9 @@ const StyledJob = styled.li`
   h3 {
     margin: 0;
     font-family: ${FONTS.PRIMARY};
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.5;
-    font-weight: 600;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: ${COLORS.YELLOW};
