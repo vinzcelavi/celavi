@@ -20,10 +20,6 @@ import Social, { SocialLink } from '../components/Social';
 const Wrapper = styled.div`
   position: relative;
   background-color: ${COLORS.WHITE};
-
-  ::selection {
-    background-color: ${rgba(COLORS.BLACK, 0.2)};
-  }
 `;
 
 const Container = styled.div`
