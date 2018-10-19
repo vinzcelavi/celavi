@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import { lighten } from 'polished'
 import FONTS from '../constants/fonts'
 import COLORS from '../constants/colors'
 
@@ -38,7 +38,7 @@ const StyledSwipeLink = styled.a`
     left: 0;
     width: 30%;
     height: 100%;
-    background-color: ${COLORS.YELLOW};
+    background-color: ${lighten(0.1, COLORS.YELLOW)};
   }
 
   &::before {

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import { rgba } from 'polished'
 import { space } from 'styled-system'
-
 import FONTS from '../constants/fonts'
 import COLORS from '../constants/colors'
 
@@ -11,7 +11,7 @@ const StyledParagraph = styled.p`
   font-size: 1rem;
   line-height: 1.75;
   font-weight: 400;
-  color: ${COLORS.ANTHRACITE};
+  color: ${rgba(COLORS.ANTHRACITE, 0.8)};
   ${space}
 
   strong {
