@@ -8,8 +8,8 @@ import COLORS from '../constants/colors'
 const StyledLink = styled.a`
   text-decoration: none;
   font-weight: 700;
-  color: ${COLORS.WHITE};
-  box-shadow: inset 0 -1px 0 ${rgba(COLORS.WHITE, 0.8)};
+  color: ${COLORS.ANTHRACITE};
+  box-shadow: inset 0 -1px 0 ${rgba(COLORS.ANTHRACITE, 0.8)};
   transition: all 0.25s ease;
 
   &:hover {

@@ -19,7 +19,7 @@ import Social, { SocialLink } from '../components/Social';
 
 const Wrapper = styled.div`
   position: relative;
-  background-color: ${COLORS.ANTHRACITE};
+  background-color: ${COLORS.WHITE};
 
   ::selection {
     background-color: ${rgba(COLORS.BLACK, 0.2)};
@@ -50,7 +50,7 @@ const Hero = styled.header`
   font-size: 30px;
   line-height: 1.4;
   font-weight: 700;
-  color: ${COLORS.WHITE};
+  color: ${COLORS.ANTHRACITE};
   ${fontSize};
 
   p {
@@ -60,7 +60,7 @@ const Hero = styled.header`
   u {
     text-decoration: none;
     padding-bottom: 3px;
-    box-shadow: inset 0 -30px 0 ${rgba(COLORS.WHITE, 0.05)};
+    box-shadow: inset 0 -30px 0 ${rgba(COLORS.ANTHRACITE, 0.05)};
   }
 `;
 
@@ -152,8 +152,7 @@ const Index = () => (
               <Link href="https://agilitation.fr/" title="Agilitation">
                 Agilitation
               </Link>
-              , donc <strong>je ne suis pas disponible pour une mission</strong>
-              . Mais n'hésitez pas à me contacter sur{' '}
+              , mais n'hésitez pas à me contacter sur{' '}
               <CopyText
                 value="&#118;&#105;&#110;&#x63;&#101;&#x6e;&#116;&#64;&#99;&#x65;&#108;&#x61;&#x76;&#105;&#x2e;&#x66;&#x72;"
                 message="copiée"

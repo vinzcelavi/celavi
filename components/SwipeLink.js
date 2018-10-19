@@ -19,14 +19,13 @@ const StyledSwipeLink = styled.a`
   line-height: 1.5;
   font-weight: 700;
   text-decoration: none;
-  color: ${COLORS.WHITE};
+  color: ${COLORS.ANTHRACITE};
   overflow: hidden;
   transition: all 0.35s ${TRANS_FUNCTION};
 
   span {
     z-index: 20;
     position: relative;
-    text-shadow: 0 2px 35px ${COLORS.BLACK};
     transition: all ${TRANS_DURATION_IN} ${TRANS_FUNCTION};
   }
 

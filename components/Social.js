@@ -1,7 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { rgba } from 'polished'
-
 import FONTS from '../constants/fonts'
 import COLORS from '../constants/colors'
 
@@ -17,11 +15,11 @@ const SocialLink = styled.a`
   letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
-  color: ${rgba(COLORS.WHITE, 0.8)};
+  color: ${COLORS.ANTHRACITE};
   transition: color 0.25s ease;
 
   &:hover {
-    color: ${COLORS.WHITE};
+    color: ${COLORS.YELLOW};
   }
 `
 

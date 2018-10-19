@@ -21,7 +21,7 @@ const ListItem = styled.li`
   font-size: 1rem;
   line-height: 1.75;
   font-weight: 400;
-  color: ${rgba(COLORS.WHITE, 0.8)};
+  color: ${rgba(COLORS.ANTHRACITE, 0.8)};
 
   &::before {
     content: "";
@@ -29,7 +29,7 @@ const ListItem = styled.li`
     margin-right: 10px;
     width: 16px;
     height: 1px;
-    background-color: ${rgba(COLORS.WHITE, 0.4)};
+    background-color: ${rgba(COLORS.ANTHRACITE, 0.4)};
   }
 `
 

@@ -19,7 +19,7 @@ const StyledJob = styled.li`
   font-size: 1rem;
   line-height: 1.75;
   font-weight: 400;
-  color: ${rgba(COLORS.WHITE, 0.9)};
+  color: ${rgba(COLORS.ANTHRACITE, 0.9)};
 
   h2 {
     margin: 0;
@@ -33,7 +33,7 @@ const StyledJob = styled.li`
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: ${rgba(COLORS.YELLOW, 0.8)};
+    color: ${COLORS.YELLOW};
   }
 `
 
