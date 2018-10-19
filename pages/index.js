@@ -143,7 +143,7 @@ const Index = () => (
           <Section width={['auto', 600]}>
             <Title fontSize={50}>Me contacter</Title>
             <Paragraph mb={60}>
-              Pour toute demande spécifique, ou juste pour me passer le bonjour,
+              Pour toute demande spécifique, ou juste pour le fun,
               vous pouvez me contacter sur{' '}
               <CopyText
                 value="&#118;&#105;&#110;&#x63;&#101;&#x6e;&#116;&#64;&#99;&#x65;&#108;&#x61;&#x76;&#105;&#x2e;&#x66;&#x72;"
