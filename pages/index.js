@@ -155,7 +155,7 @@ const Index = () => (
               , donc <strong>je ne suis pas disponible pour une mission</strong>
               . Mais n'hésitez pas à me contacter sur{' '}
               <CopyText
-                value="&#118;&#105;&#110;&#x63;&#101;&#x6e;&#116;&#64;&#99;&#x65;&#108;&#x61;&#x76;&#105;&#x2e;&#x66;&#x72;"
+                value="&#098;&#111;&#110;&#106;&#111;&#117;&#114;&#064;&#118;&#105;&#110;&#099;&#101;&#110;&#116;&#046;&#098;&#105;&#111;"
                 message="copiée"
               />
               .
