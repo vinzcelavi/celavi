@@ -121,8 +121,8 @@ const Index = () => (
                 </h2>
                 <h3>2018 - Aujourd'hui</h3>
                 <Paragraph>
-                  Développement d'un Styleguide et des componsants de
-                  l'application avec React et styled-components.
+                  Développement des interfaces utilisateurs et d'applications web
+                  modernes avec React et styled-components.
                 </Paragraph>
               </Job>
               <Job>
