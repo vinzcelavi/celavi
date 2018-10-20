@@ -32,7 +32,7 @@ const JobTitle = styled.h2`
   font-size: 14px;
   line-height: 1.5;
   font-weight: 400;
-  letter-spacing: 0.075em;
+  letter-spacing: 0.5px;
   color: ${COLORS.YELLOW};
 `;
 
