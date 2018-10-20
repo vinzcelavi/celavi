@@ -13,7 +13,7 @@ export default class MyDocument extends Document {
     return (
       <html>
         <Head>
-          <title>Vincent Bianciotto | UI/UX Designer</title>
+          <title>Vincent Bianciotto | Front-End Designer</title>
           {this.props.styleTags}
           <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
           <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
