@@ -39,25 +39,19 @@ const Section = styled.section`
   ${width};
 `;
 
-const Hero = styled.header`
-  margin: 0;
+const HeroWrapper = styled.header`
   margin-bottom: 200px;
+`;
+
+const Hero = styled.p`
+  margin: 0;
+  margin-bottom: 40px;
   font-family: ${FONTS.PRIMARY};
   font-size: 30px;
   line-height: 1.4;
   font-weight: 700;
   color: ${COLORS.ANTHRACITE};
   ${fontSize};
-
-  p {
-    margin: 0 0 40px;
-  }
-
-  u {
-    text-decoration: none;
-    padding-bottom: 3px;
-    box-shadow: inset 0 -30px 0 ${rgba(COLORS.ANTHRACITE, 0.05)};
-  }
 `;
 
 const Index = () => (
@@ -69,12 +63,23 @@ const Index = () => (
         </GridCell>
 
         <GridCell width={['auto', 'auto', '67%']}>
-          <Hero fontSize={[30, 40, 50]}>
-            Bonjour.
-            <br />
-            Je crée des interfaces web ergonomiques et épurées depuis 10 ans.
-            Je suis basé à Montpellier.
-          </Hero>
+          <HeroWrapper>
+            <Hero fontSize={[30, 46]}>
+              Bonjour,
+              <br />
+              Je suis actuellement web designer chez{' '}
+              <Link href="https://www.agilitation.fr">
+                Agilitation
+              </Link>, à Montpellier.
+            </Hero>
+
+            <Paragraph fontSize={[16, 18]}>
+              Par le passé j'ai travaillé pour Lunchr, Elium et Teads.
+              Je suis fan des interfaces web minimalistes et soignées.
+              Mes passions se résument en 3 choses essentielles : le Squash,
+              la bière et faire des blagues. Sans ordre de préférence.
+            </Paragraph>
+          </HeroWrapper>
 
           <Section width={['auto', 600]}>
             <Title fontSize={[40, 50]}>Expérience</Title>
