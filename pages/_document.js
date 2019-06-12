@@ -28,7 +28,7 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-          <script dangerouslySetInnerHTML={{
+          {/* <script dangerouslySetInnerHTML={{
             __html: `var el = document.createElement('script');
               el.setAttribute('src', 'https://static.axept.io/sdk.js');
               el.setAttribute('type', 'text/javascript');
@@ -38,7 +38,7 @@ export default class MyDocument extends Document {
                 document.body.appendChild(el);
               }`
           }}>
-          </script>
+          </script> */}
         </body>
       </html>
     )
