@@ -24,6 +24,10 @@ export default class MyDocument extends Document {
           <link rel="stylesheet" href="/static/style.css" />
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" />
           <link href="https://fonts.googleapis.com/css?family=Mada:300,400,500,600,700|Overpass+Mono:300,400,600,700" rel="stylesheet" />
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
           <script dangerouslySetInnerHTML={{
             __html: `var el = document.createElement('script');
               el.setAttribute('src', 'https://static.axept.io/sdk.js');
@@ -35,10 +39,6 @@ export default class MyDocument extends Document {
               }`
           }}>
           </script>
-        </Head>
-        <body>
-          <Main />
-          <NextScript />
         </body>
       </html>
     )
