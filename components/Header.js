@@ -22,7 +22,6 @@ const Name = styled.h1`
   font-size: 26px;
   line-height: 1.25;
   font-weight: 700;
-  text-transform: lowercase;
   color: ${COLORS.ANTHRACITE};
 `;
 
@@ -33,6 +32,7 @@ const JobTitle = styled.h2`
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0.5px;
+  text-transform: lowercase;
   color: ${COLORS.YELLOW};
 `;
 
