@@ -133,15 +133,14 @@ const Index = () => (
           <Section width={['auto', 600]}>
             <Title fontSize={50}>Technologies</Title>
             <List ml={[0, 40]}>
-              <ListItem>JavaScript</ListItem>
+              <ListItem>Javascript</ListItem>
               <ListItem>React</ListItem>
-              <ListItem>styled-components</ListItem>
-              <ListItem>CSS/Sass</ListItem>
+              <ListItem>Styled components</ListItem>
+              <ListItem>CSS • Sass • Scss</ListItem>
               <ListItem>Sketch</ListItem>
               <ListItem>git</ListItem>
               <ListItem>jQuery</ListItem>
-              <ListItem>HTML/Haml/ERB</ListItem>
-              <ListItem>MJML</ListItem>
+              <ListItem>HTML • Haml• ERB • MJML</ListItem>
             </List>
           </Section>
 
