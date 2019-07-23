@@ -140,7 +140,7 @@ const Index = () => (
               <ListItem>Sketch</ListItem>
               <ListItem>git</ListItem>
               <ListItem>jQuery</ListItem>
-              <ListItem>HTML • Haml• ERB • MJML</ListItem>
+              <ListItem>HTML • Haml • ERB • MJML</ListItem>
             </List>
           </Section>
 
