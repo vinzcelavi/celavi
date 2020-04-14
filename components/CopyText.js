@@ -14,8 +14,8 @@ const StyledCopyText = styled.span`
   transition: all 0.25s ease;
 
   &:hover {
-    color: ${COLORS.YELLOW};
-    box-shadow: inset 0 -1px 0 ${rgba(COLORS.YELLOW, 0.8)};
+    color: ${COLORS.PRIMARY};
+    box-shadow: inset 0 -1px 0 ${rgba(COLORS.PRIMARY, 0.8)};
   }
 `;
 
@@ -25,7 +25,7 @@ const Message = styled.span`
   margin-left: 8px;
   font-size: 13px;
   color: ${COLORS.WHITE};
-  background-color: ${COLORS.YELLOW};
+  background-color: ${COLORS.PRIMARY};
   border-radius: 2px;
 `;
 

@@ -13,8 +13,8 @@ const StyledLink = styled.a`
   transition: all 0.25s ease;
 
   &:hover {
-    color: ${COLORS.YELLOW};
-    box-shadow: inset 0 -2px 0 ${rgba(COLORS.YELLOW, 0.8)};
+    color: ${COLORS.PRIMARY};
+    box-shadow: inset 0 -2px 0 ${rgba(COLORS.PRIMARY, 0.8)};
   }
 `
 

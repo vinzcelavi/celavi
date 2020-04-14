@@ -38,7 +38,7 @@ const StyledSwipeLink = styled.a`
     left: 0;
     width: 30%;
     height: 100%;
-    background-color: ${lighten(0.1, COLORS.YELLOW)};
+    background-color: ${lighten(0.1, COLORS.PRIMARY)};
   }
 
   &::before {

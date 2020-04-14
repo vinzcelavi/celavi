@@ -33,7 +33,7 @@ const JobTitle = styled.h2`
   font-weight: 400;
   letter-spacing: 0.5px;
   text-transform: lowercase;
-  color: ${COLORS.YELLOW};
+  color: ${COLORS.PRIMARY};
 `;
 
 const Header = ({ position }) => (

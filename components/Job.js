@@ -33,7 +33,7 @@ const StyledJob = styled.li`
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: ${COLORS.YELLOW};
+    color: ${COLORS.PRIMARY};
   }
 `
 

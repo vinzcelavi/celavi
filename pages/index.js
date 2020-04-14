@@ -68,13 +68,13 @@ const Index = () => (
               Bonjour,
               <br />
               Je suis actuellement web designer chez{' '}
-              <Link href="https://www.agilitation.fr">
-                Agilitation
+              <Link href="https://www.main-gauche.com">
+                Main Gauche
               </Link>, à Montpellier.
             </Hero>
 
             <Paragraph fontSize={[16, 18]}>
-              Par le passé j'ai travaillé pour Lunchr, Elium et Teads.
+              Par le passé j'ai travaillé pour Axeptio, Lunchr, Elium et Teads.
               Je suis fan des interfaces web minimalistes et soignées.
               Mes passions se résument en 3 choses essentielles : le Squash,
               la bière et faire des blagues. Sans ordre de préférence.
@@ -86,11 +86,22 @@ const Index = () => (
             <Jobs ml={[0, 40]}>
               <Job>
                 <h2>
-                  <SwipeLink href="https://www.agilitation.fr">
-                    Agilitation
+                  <SwipeLink href="https://www.main-gauche.com">
+                    Main Gauche
                   </SwipeLink>
                 </h2>
-                <h3>2018 - Aujourd'hui</h3>
+                <h3>2020 - Aujourd'hui</h3>
+                <Paragraph>
+                  Développement front-end due nouveau site internet en React et styled-components.
+                </Paragraph>
+              </Job>
+              <Job>
+                <h2>
+                  <SwipeLink href="https://www.agilitation.fr">
+                    Axeptio
+                  </SwipeLink>
+                </h2>
+                <h3>2018 - 2020</h3>
                 <Paragraph>
                   Développement des interfaces utilisateurs et d'applications web
                   modernes avec React et styled-components.
