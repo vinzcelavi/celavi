@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import media from 'styled-media-query';
-import { position, space, width, fontSize } from 'styled-system';
-import { rgba } from 'polished';
-
+import { space, width, fontSize } from 'styled-system';
 import Grid, { GridCell } from '../components/Grid';
 import FONTS from '../constants/fonts';
 import COLORS from '../constants/colors';
@@ -92,12 +90,12 @@ const Index = () => (
                 </h2>
                 <h3>2020 - Aujourd'hui</h3>
                 <Paragraph>
-                  Développement front-end due nouveau site internet en React et styled-components.
+                  Développement front-end du futur site internet en React et styled-components.
                 </Paragraph>
               </Job>
               <Job>
                 <h2>
-                  <SwipeLink href="https://www.agilitation.fr">
+                  <SwipeLink href="https://www.axeptio.eu">
                     Axeptio
                   </SwipeLink>
                 </h2>
