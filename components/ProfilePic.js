@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 const URL = '../static/'
-const FILE = 'vincent-bianciotto'
-const PHOTO_SIZE = 100
+const FILE = 'vincent-bianciotto-2'
+const PHOTO_SIZE = 150
 
 const StyledProfilePic = styled.div`
   border-radius: 50%;
