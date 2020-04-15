@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { rgba } from 'polished'
+import { rgba, darken } from 'polished'
 import { space } from 'styled-system'
 
 import FONTS from '../constants/fonts'
@@ -33,7 +33,7 @@ const StyledJob = styled.li`
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: ${COLORS.PRIMARY};
+    color: ${darken(0.03, COLORS.PRIMARY)};
   }
 `
 

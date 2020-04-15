@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { position } from 'styled-system'
+import { darken } from 'polished';
 import FONTS from '../constants/fonts'
 import COLORS from '../constants/colors'
 import ProfilePic from './ProfilePic'
@@ -33,7 +34,7 @@ const JobTitle = styled.h2`
   font-weight: 400;
   letter-spacing: 0.5px;
   text-transform: lowercase;
-  color: ${COLORS.PRIMARY};
+  color: ${darken(0.03, COLORS.PRIMARY)};
 `;
 
 const Header = ({ position }) => (
