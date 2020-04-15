@@ -2,31 +2,44 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import { rgba } from 'polished';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-
 import COLORS from '../constants/colors';
 
+const Wrapper = styled.span`
+  position: relative;
+`
+
 const StyledCopyText = styled.span`
+  padding: 2px 4px;
   text-decoration: none;
   font-weight: 700;
   color: ${COLORS.ANTHRACITE};
-  box-shadow: inset 0 -1px 0 ${rgba(COLORS.ANTHRACITE, 0.8)};
+  border-radius: 3px;
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition: 0.15s ease;
 
   &:hover {
-    color: ${COLORS.PRIMARY};
-    box-shadow: inset 0 -1px 0 ${rgba(COLORS.PRIMARY, 0.8)};
+    background: ${rgba(COLORS.ANTHRACITE, 0.06)};
   }
 `;
 
 const Message = styled.span`
-  display: inline-flex;
-  padding: 0 6px;
-  margin-left: 8px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  margin-left: 4px;
   font-size: 13px;
-  color: ${COLORS.WHITE};
-  background-color: ${COLORS.PRIMARY};
-  border-radius: 2px;
+  font-weight: 700;
+  color: ${COLORS.PRIMARY};
+  opacity: 0;
+
+  ${props => props.copied && `
+    top: -60px;
+    opacity: 1;
+    transition: top 0.75s,
+                opacity 0.15s;
+  `};
 `;
 
 class CopyText extends Component {
@@ -44,13 +57,13 @@ class CopyText extends Component {
 
   render() {
     return (
-      <span>
+      <Wrapper>
         <CopyToClipboard text={this.props.value} onCopy={this.onCopy} title="Copier dans le presse-papier">
           <StyledCopyText>{this.props.value}</StyledCopyText>
         </CopyToClipboard>
 
-        {this.state.copied ? <Message>{this.props.message}</Message> : null}
-      </span>
+        <Message copied={this.state.copied}>{this.props.message}</Message>
+      </Wrapper>
     );
   }
 }
