@@ -1,3 +1,8 @@
+const fonts = {
+  primary: '"Mada", sans-serif',
+  secondary: '"Overpass Mono", sans-serif'
+};
+
 const colors = {
   white: '#ffffff',
   black: '#000000',
@@ -10,7 +15,17 @@ const colors = {
 };
 
 export const lightTheme = {
+  fonts: {
+    primary: fonts.primary,
+    secondary: fonts.secondary
+  },
   colors: {
+    primary: colors.primary,
+    anthracite: colors.anthracite,
+    black: colors.black,
+    white: colors.white
+  },
+  main: {
     body: colors.white,
     text: colors.anthracite
   },
@@ -25,9 +40,10 @@ export const lightTheme = {
 };
 
 export const darkTheme = {
-  colors: {
+  ...lightTheme,
+  main: {
     body: colors.anthracite,
-    text: colors.grayLight
+    text: colors.white
   },
   toggle: {
     gradient: 'linear-gradient(#091236, #1E215D)',

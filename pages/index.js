@@ -3,8 +3,6 @@ import styled, { createGlobalStyle } from 'styled-components';
 import media from 'styled-media-query';
 import { space, width, fontSize } from 'styled-system';
 import Grid, { GridCell } from '../components/Grid';
-import FONTS from '../constants/fonts';
-import COLORS from '../constants/colors';
 import Header from '../components/Header';
 import Title from '../components/Title';
 import Paragraph from '../components/Paragraph';
@@ -39,11 +37,11 @@ const HeroWrapper = styled.header`
 const Hero = styled.p`
   margin: 0;
   margin-bottom: 40px;
-  font-family: ${FONTS.PRIMARY};
+  font-family: ${({ theme }) => theme.fonts.primary};
   font-size: 30px;
   line-height: 1.4;
   font-weight: 700;
-  color: ${COLORS.ANTHRACITE};
+  color: ${({ theme }) => theme.colors.anthracite};
   ${fontSize};
 `;
 

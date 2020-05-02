@@ -1,25 +1,22 @@
-import React from 'react'
-import styled from 'styled-components'
-import { rgba, darken } from 'polished'
-import { space } from 'styled-system'
-
-import FONTS from '../constants/fonts'
-import COLORS from '../constants/colors'
+import React from 'react';
+import styled from 'styled-components';
+import { rgba, darken } from 'polished';
+import { space } from 'styled-system';
 
 const Jobs = styled.ul`
   list-style: none;
   margin: 0;
   padding: 0;
   ${space}
-`
+`;
 
 const StyledJob = styled.li`
   margin-bottom: 60px;
-  font-family: ${FONTS.SECONDARY};
+  font-family: ${({ theme }) => theme.fonts.secondary};
   font-size: 1rem;
   line-height: 1.75;
   font-weight: 400;
-  color: ${rgba(COLORS.ANTHRACITE, 0.9)};
+  color: ${({ theme }) => rgba(theme.colors.anthracite, 0.9)};
 
   h2 {
     margin: 0;
@@ -27,21 +24,17 @@ const StyledJob = styled.li`
 
   h3 {
     margin: 0;
-    font-family: ${FONTS.PRIMARY};
+    font-family: ${({ theme }) => theme.fonts.primary};
     font-size: 14px;
     line-height: 1.5;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: ${darken(0.03, COLORS.PRIMARY)};
+    color: ${({ theme }) => theme.colors.primary};
   }
-`
+`;
 
-const Job = ({ children }) => (
-  <StyledJob>
-    {children}
-  </StyledJob>
-)
+const Job = ({ children }) => <StyledJob>{children}</StyledJob>;
 
-export default Job
-export { Jobs }
+export default Job;
+export { Jobs };

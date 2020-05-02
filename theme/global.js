@@ -4,7 +4,8 @@ export default createGlobalStyle`
   body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: ${({ theme }) => theme.colors.body};
+    color: ${({ theme }) => theme.main.text};
+    background-color: ${({ theme }) => theme.main.body};
     overflow-y: auto;
     overflow-x: hidden;
   }

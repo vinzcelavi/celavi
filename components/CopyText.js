@@ -30,7 +30,7 @@ const Message = styled.span`
   margin-left: 4px;
   font-size: 13px;
   font-weight: 700;
-  color: ${COLORS.PRIMARY};
+  color: ${({ theme }) => theme.colors.primary};
   opacity: 0;
 
   ${props =>
