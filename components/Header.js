@@ -1,10 +1,10 @@
-import React from 'react'
-import styled from 'styled-components'
-import { position } from 'styled-system'
+import React from 'react';
+import styled from 'styled-components';
+import { position } from 'styled-system';
 import { darken } from 'polished';
-import FONTS from '../constants/fonts'
-import COLORS from '../constants/colors'
-import ProfilePic from './ProfilePic'
+import FONTS from '../constants/fonts';
+import COLORS from '../constants/colors';
+import ProfilePic from './ProfilePic';
 
 const StyledHeader = styled.div`
   position: relative;
@@ -41,8 +41,8 @@ const Header = ({ position }) => (
   <StyledHeader position={position}>
     <ProfilePic />
     <Name>Vincent Bianciotto</Name>
-    <JobTitle>Front-End Designer</JobTitle>
+    <JobTitle>Web Designer</JobTitle>
   </StyledHeader>
-)
+);
 
-export default Header
+export default Header;

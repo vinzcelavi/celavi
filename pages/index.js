@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
+import React from 'react';
+import styled, { createGlobalStyle } from 'styled-components';
 import media from 'styled-media-query';
 import { space, width, fontSize } from 'styled-system';
 import Grid, { GridCell } from '../components/Grid';
@@ -14,11 +14,6 @@ import SwipeLink from '../components/SwipeLink';
 import CopyText from '../components/CopyText';
 import List, { ListItem } from '../components/List';
 import Social, { SocialLink } from '../components/Social';
-
-const Wrapper = styled.div`
-  position: relative;
-  background-color: ${COLORS.WHITE};
-`;
 
 const Container = styled.div`
   padding: 10vh 0 0;
@@ -53,133 +48,127 @@ const Hero = styled.p`
 `;
 
 const Index = () => (
-  <Wrapper>
-    <Container width={['auto', '80%']} px={[30, 0]}>
-      <Grid flexDirection={['column', 'column', 'row']}>
-        <GridCell width={['auto', 'auto', '33%']}>
-          <Header position={['relative', 'relative', 'fixed']} />
-        </GridCell>
+  <Container width={['auto', '80%']} px={[30, 0]}>
+    <Grid flexDirection={['column', 'column', 'row']}>
+      <GridCell width={['auto', 'auto', '33%']}>
+        <Header position={['relative', 'relative', 'fixed']} />
+      </GridCell>
 
-        <GridCell width={['auto', 'auto', '67%']}>
-          <HeroWrapper>
-            <Hero fontSize={[30, 46]}>
-              Bonjour,
-              <br />
-              Je suis actuellement web designer chez{' '}
-              <Link href="https://www.main-gauche.com">
-                Main Gauche
-              </Link>, à Montpellier.
-            </Hero>
+      <GridCell width={['auto', 'auto', '67%']}>
+        <HeroWrapper>
+          <Hero fontSize={[30, 46]}>
+            Bonjour,
+            <br />
+            Je suis actuellement web designer chez{' '}
+            <Link href="https://www.main-gauche.com">Main Gauche</Link>, à
+            Montpellier.
+          </Hero>
 
-            <Paragraph fontSize={[16, 18]}>
-              Par le passé j'ai travaillé pour Axeptio, Lunchr, Elium et Teads.
-              Je suis fan des interfaces web minimalistes et soignées.
-              Mes passions se résument en 3 choses essentielles : le Squash,
-              la bière et faire des blagues. Sans ordre de préférence.
-            </Paragraph>
-          </HeroWrapper>
+          <Paragraph fontSize={[16, 18]}>
+            Par le passé j'ai travaillé pour Axeptio, Lunchr, Elium et Teads. Je
+            suis fan des interfaces web minimalistes et soignées. Mes passions
+            se résument en 3 choses essentielles : le Squash, la bière et faire
+            des blagues. Sans ordre de préférence.
+          </Paragraph>
+        </HeroWrapper>
 
-          <Section width={['auto', 600]}>
-            <Title fontSize={[40, 50]}>Expérience</Title>
-            <Jobs ml={[0, 40]}>
-              <Job>
-                <h2>
-                  <SwipeLink href="https://www.main-gauche.com">
-                    Main Gauche
-                  </SwipeLink>
-                </h2>
-                <h3>2020 - Aujourd'hui</h3>
-                <Paragraph>
-                  Développement front-end du futur site internet en React et styled-components.
-                </Paragraph>
-              </Job>
-              <Job>
-                <h2>
-                  <SwipeLink href="https://www.axeptio.eu">
-                    Axeptio
-                  </SwipeLink>
-                </h2>
-                <h3>2018 - 2020</h3>
-                <Paragraph>
-                  Développement des interfaces utilisateurs et d'applications web
-                  modernes avec React et styled-components.
-                </Paragraph>
-              </Job>
-              <Job>
-                <h2>
-                  <SwipeLink href="https://www.lunchr.co">Lunchr</SwipeLink>
-                </h2>
-                <h3>2016 - 2018</h3>
-                <Paragraph>
-                  Intégration des maquettes de l'application web avec ReactJS et
-                  styled-components.
-                </Paragraph>
-              </Job>
-              <Job>
-                <h2>
-                  <SwipeLink href="https://www.elium.tv">Elium</SwipeLink>
-                </h2>
-                <h3>2017</h3>
-                <Paragraph>
-                  Développement de web components AngularJS et Sass.
-                </Paragraph>
-              </Job>
-              <Job>
-                <h2>
-                  <SwipeLink href="https://teads.tv">Teads</SwipeLink>
-                </h2>
-                <h3>2014 - 2016</h3>
-                <Paragraph>
-                  UI/UX Design et intégration des designs sur le Dashboard de
-                  gestion des campagnes.
-                  <br />
-                  Développement de web components AngularJS et Sass.
-                </Paragraph>
-              </Job>
-            </Jobs>
-          </Section>
+        <Section width={['auto', 600]}>
+          <Title fontSize={[40, 50]}>Expérience</Title>
+          <Jobs ml={[0, 40]}>
+            <Job>
+              <h2>
+                <SwipeLink href="https://www.main-gauche.com">
+                  Main Gauche
+                </SwipeLink>
+              </h2>
+              <h3>2020 - Aujourd'hui</h3>
+              <Paragraph>
+                Développement front-end du futur site internet en React et
+                styled-components.
+              </Paragraph>
+            </Job>
+            <Job>
+              <h2>
+                <SwipeLink href="https://www.axeptio.eu">Axeptio</SwipeLink>
+              </h2>
+              <h3>2018 - 2020</h3>
+              <Paragraph>
+                Développement des interfaces utilisateurs et d'applications web
+                modernes avec React et styled-components.
+              </Paragraph>
+            </Job>
+            <Job>
+              <h2>
+                <SwipeLink href="https://www.lunchr.co">Lunchr</SwipeLink>
+              </h2>
+              <h3>2016 - 2018</h3>
+              <Paragraph>
+                Intégration des maquettes de l'application web avec ReactJS et
+                styled-components.
+              </Paragraph>
+            </Job>
+            <Job>
+              <h2>
+                <SwipeLink href="https://www.elium.tv">Elium</SwipeLink>
+              </h2>
+              <h3>2017</h3>
+              <Paragraph>
+                Développement de web components AngularJS et Sass.
+              </Paragraph>
+            </Job>
+            <Job>
+              <h2>
+                <SwipeLink href="https://teads.tv">Teads</SwipeLink>
+              </h2>
+              <h3>2014 - 2016</h3>
+              <Paragraph>
+                UI/UX Design et intégration des designs sur le Dashboard de
+                gestion des campagnes.
+                <br />
+                Développement de web components AngularJS et Sass.
+              </Paragraph>
+            </Job>
+          </Jobs>
+        </Section>
 
-          <Section width={['auto', 600]}>
-            <Title fontSize={50}>Technologies</Title>
-            <List ml={[0, 40]}>
-              <ListItem>Javascript</ListItem>
-              <ListItem>React</ListItem>
-              <ListItem>Styled components</ListItem>
-              <ListItem>CSS • Sass • Scss</ListItem>
-              <ListItem>Sketch</ListItem>
-              <ListItem>git</ListItem>
-              <ListItem>jQuery</ListItem>
-              <ListItem>HTML • Haml • ERB • MJML</ListItem>
-            </List>
-          </Section>
+        <Section width={['auto', 600]}>
+          <Title fontSize={50}>Technologies</Title>
+          <List ml={[0, 40]}>
+            <ListItem>Javascript</ListItem>
+            <ListItem>React</ListItem>
+            <ListItem>Styled components</ListItem>
+            <ListItem>CSS • Sass • Scss</ListItem>
+            <ListItem>Sketch</ListItem>
+            <ListItem>git</ListItem>
+            <ListItem>jQuery</ListItem>
+            <ListItem>HTML • Haml • ERB • MJML</ListItem>
+          </List>
+        </Section>
 
-          <Section width={['auto', 600]}>
-            <Title fontSize={50}>Me contacter</Title>
-            <Paragraph mb={60}>
-              Pour toute demande spécifique, ou juste pour le fun,
-              vous pouvez me contacter sur{' '}
-              <CopyText
-                value="&#118;&#105;&#110;&#x63;&#101;&#x6e;&#116;&#64;&#99;&#x65;&#108;&#x61;&#x76;&#105;&#x2e;&#x66;&#x72;"
-                message="copiée"
-              />
-              . Je me ferai un plaisir de vous répondre.
-            </Paragraph>
-            <Social>
-              <SocialLink href="https://dribbble.com/vinzcelavi" dribbble>
-                Dribbble
-              </SocialLink>
-              <SocialLink href="https://github.com/vinzcelavi">
-                Github
-              </SocialLink>
-              <SocialLink href="https://www.twitter.com/vinzcelavi" twitter>
-                Twitter
-              </SocialLink>
-            </Social>
-          </Section>
-        </GridCell>
-      </Grid>
-    </Container>
-  </Wrapper>
+        <Section width={['auto', 600]}>
+          <Title fontSize={50}>Me contacter</Title>
+          <Paragraph mb={60}>
+            Pour toute demande spécifique, ou juste pour le fun, vous pouvez me
+            contacter sur{' '}
+            <CopyText
+              value="&#118;&#105;&#110;&#x63;&#101;&#x6e;&#116;&#64;&#99;&#x65;&#108;&#x61;&#x76;&#105;&#x2e;&#x66;&#x72;"
+              message="copiée"
+            />
+            . Je me ferai un plaisir de vous répondre.
+          </Paragraph>
+          <Social>
+            <SocialLink href="https://dribbble.com/vinzcelavi" dribbble>
+              Dribbble
+            </SocialLink>
+            <SocialLink href="https://github.com/vinzcelavi">Github</SocialLink>
+            <SocialLink href="https://www.twitter.com/vinzcelavi" twitter>
+              Twitter
+            </SocialLink>
+          </Social>
+        </Section>
+      </GridCell>
+    </Grid>
+  </Container>
 );
 
 export default Index;
