@@ -8,6 +8,7 @@ export default createGlobalStyle`
     background-color: ${({ theme }) => theme.main.body};
     overflow-y: auto;
     overflow-x: hidden;
+    transition: all 0.5s ease;
   }
 
   ::selection {
