@@ -9,19 +9,22 @@ const ToggleButton = styled.button`
   position: absolute;
   top: 1rem;
   right: 1rem;
+  display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
   cursor: pointer;
   border-radius: 50%;
-  overflow: hidden;
 `;
 
 const Icon = styled.div`
   position: relative;
   height: 1.5rem;
   width: 1.5rem;
-  border-radius: 50%;
+  margin: 0 0.5rem;
+  color: ${({ theme }) => theme.main.text};
   background: linear-gradient(25deg, #8d77ff, #93cdff);
+  border-radius: 50%;
   transition: all 0.25s linear;
 
   &::before {
@@ -50,9 +53,16 @@ const Icon = styled.div`
 
 const Toggle = ({ theme, toggleTheme }) => {
   const isLight = theme === 'light';
+  
   return (
     <ToggleButton onClick={toggleTheme}>
+      <span>
+      Dark
+      </span>
       <Icon lightTheme={isLight} />
+      <span>
+      Light
+      </span>
     </ToggleButton>
   );
 };

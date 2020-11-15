@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import COLORS from '../constants/colors';
 
 const Wrapper = styled.span`
   position: relative;

@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { rgba } from 'polished';
-import COLORS from '../constants/colors';
 
 const StyledLink = styled.a`
   text-decoration: none;
