@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const toggleWidth = 68;
-const togglePadding = 4;
+const toggleWidth = 70;
+const togglePadding = 6;
 const iconWidth = 20;
 
 const Style = styled.button`
@@ -19,16 +19,18 @@ const Style = styled.button`
   display: flex;
   align-items: center;
   font-size: 0.815rem;
+  background: ${({ theme }) => theme.toggle.background};
   cursor: pointer;
   border-radius: 1000px;
-  background: ${({ theme }) => theme.toggle.background};
+  overflow: hidden;
+  transition: all 0.45s ease;
 
   > span {
     z-index: 10;
     position: absolute;
     top: 50%;
     left: 10px;
-    color: #6869ad;
+    color: #555;
     opacity: 1;
     transform: translateY(-50%);
     transition: all 0.45s ease;
@@ -36,7 +38,7 @@ const Style = styled.button`
     &:last-child {
       left: auto;
       right: 10px;
-      color: #354461;
+      color: #999;
       opacity: 0;
     }
   }
@@ -74,7 +76,6 @@ const Icon = styled.div`
   color: ${({ theme }) => theme.main.text};
   background: linear-gradient(25deg, #8d77ff, #93cdff);
   border-radius: 50%;
-  overflow: hidden;
   transition: all 0.25s linear;
 
   &::before {
@@ -101,7 +102,7 @@ const Icon = styled.div`
   `};
 `;
 
-const Toggle = ({ theme, toggleTheme }) => {
+const ThemeToggle = ({ theme, toggleTheme }) => {
   const isLight = theme === 'light';
   
   return (
@@ -115,4 +116,4 @@ const Toggle = ({ theme, toggleTheme }) => {
   );
 };
 
-export default Toggle;
+export default ThemeToggle;

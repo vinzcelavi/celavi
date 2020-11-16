@@ -51,7 +51,7 @@ export const darkTheme = {
   toggle: {
     gradient: 'linear-gradient(#091236, #1E215D)',
     border: colors.anthracite,
-    background: '#282e38',
+    background: '#101319',
   },
   copyEmail: {
     text: colors.grayLight,

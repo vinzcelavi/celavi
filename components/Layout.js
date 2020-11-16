@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from '../theme/theme';
 import useDarkMode from '../theme/useDarkMode';
 import GlobalStyles from '../theme/global';
-import Toggle from '../components/Toggle';
+import ThemeToggle from './ThemeToggle';
 
 const Layout = ({ children }) => {
   const [theme, toggleTheme] = useDarkMode();
@@ -52,7 +52,7 @@ const Layout = ({ children }) => {
         />
       </Head>
 
-      <Toggle theme={theme} toggleTheme={toggleTheme} />
+      <ThemeToggle theme={theme} toggleTheme={toggleTheme} />
 
       {children}
     </ThemeProvider>
