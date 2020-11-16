@@ -21,8 +21,7 @@ const Style = styled.button`
   font-size: 0.815rem;
   cursor: pointer;
   border-radius: 1000px;
-  background: #282e38;
-  overflow: hidden;
+  background: ${({ theme }) => theme.toggle.background};
 
   > span {
     z-index: 10;
@@ -45,8 +44,6 @@ const Style = styled.button`
   ${({ lightTheme }) =>
     lightTheme &&
     `
-    background: #eee;
-
     > span:first-child {
       opacity: 0;
     }
@@ -55,18 +52,6 @@ const Style = styled.button`
       opacity: 1;
     }
   `};
-
-  &::after {
-    z-index: 100;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    /* box-shadow: inset 0 0 24px rgba(0, 0, 0, 0.2); */
-    border-radius: 1000px;
-  }
 `;
 
 const IconWrapper = styled.div`
@@ -89,16 +74,17 @@ const Icon = styled.div`
   color: ${({ theme }) => theme.main.text};
   background: linear-gradient(25deg, #8d77ff, #93cdff);
   border-radius: 50%;
+  overflow: hidden;
   transition: all 0.25s linear;
 
   &::before {
     content: '';
     position: absolute;
-    top: -3px;
-    right: -3px;
+    top: -2px;
+    right: -2px;
     width: 90%;
     height: 90%;
-    background: #282e38;
+    background: ${({ theme }) => theme.toggle.background};
     border-radius: 50%;
     transform: translate(0, 0);
     transition: all 0.45s ease;
@@ -110,10 +96,7 @@ const Icon = styled.div`
     background: linear-gradient(25deg, #ff3c71, #ff8815);
 
     &::before {
-      width: 0;
-      height: 0;
-      background: transparent;
-      transform: translate(-50%, 50%);
+      transform: translate(100%, -100%);
     }
   `};
 `;

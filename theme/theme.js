@@ -27,11 +27,13 @@ export const lightTheme = {
   },
   main: {
     body: colors.white,
-    text: colors.anthracite
+    text: colors.anthracite,
+    background: colors.white,
   },
   toggle: {
     gradient: 'linear-gradient(#eeeeee, #fafafa)',
-    border: '#eeeeee'
+    border: '#eee',
+    background: '#eee',
   },
   copyEmail: {
     text: colors.anthracite,
@@ -43,11 +45,13 @@ export const darkTheme = {
   ...lightTheme,
   main: {
     body: colors.anthracite,
-    text: colors.white
+    text: colors.white,
+    background: colors.anthracite,
   },
   toggle: {
     gradient: 'linear-gradient(#091236, #1E215D)',
-    border: colors.anthracite
+    border: colors.anthracite,
+    background: '#282e38',
   },
   copyEmail: {
     text: colors.grayLight,
