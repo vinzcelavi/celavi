@@ -23,23 +23,23 @@ const Layout = ({ children }) => {
           content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
         />
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="/static/favicon.png" type="image/png" />
+        <link rel="icon" href="/favicon.png" type="image/png" />
         <link
           rel="icon"
           sizes="32x32"
-          href="/static/favicon-32.png"
+          href="/favicon-32.png"
           type="image/png"
         />
         <link
           rel="icon"
           sizes="64x64"
-          href="/static/favicon-64.png"
+          href="/favicon-64.png"
           type="image/png"
         />
         <link
           rel="icon"
           sizes="96x96"
-          href="/static/favicon-96.png"
+          href="/favicon-96.png"
           type="image/png"
         />
         <link

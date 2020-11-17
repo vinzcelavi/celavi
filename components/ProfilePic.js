@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const URL = '../static/'
-const FILE = 'vincent-bianciotto-2'
+const URL = '/'
+const FILE = 'vincent-bianciotto'
 const PHOTO_SIZE = 120
 
 const StyledProfilePic = styled.div`
