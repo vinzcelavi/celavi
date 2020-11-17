@@ -7,3 +7,11 @@
   NODE_VERSION = "12.14.1"
   YARN_VERSION = "1.21.1"
   YARN_FLAGS = "--pure-lockfile"
+
+[dev]
+  functions = "out_functions"
+  publish   = "out_publish"
+  # We manually set the framework to static, otherwise Netlify automatically
+  # detects Next.js and redirects do not work.
+  # Read more: https://github.com/netlify/cli/blob/master/docs/netlify-dev.md#project-detection
+  framework = "#static"
