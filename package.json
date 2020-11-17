@@ -16,7 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "next": "9.3.5",
-    "next-on-netlify": "^2.6.1",
+    "next-on-netlify": "2.4.0",
     "polished": "^1.9.2",
     "react": "16.13.1",
     "react-copy-to-clipboard": "^5.0.1",
