@@ -6,9 +6,7 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "postbuild": "next-on-netlify",
-    "start": "NODE_ENV=production next",
-    "export": "npm run build && next export"
+    "postbuild": "next-on-netlify"
   },
   "keywords": [
     "Nextjs",
