@@ -18,7 +18,7 @@ const ListItem = styled.li`
   font-size: 1rem;
   line-height: 1.75;
   font-weight: 400;
-  color: ${({ theme }) => rgba(theme.colors.anthracite, 0.8)};
+  color: ${({ theme }) => theme.list.text};
 
   &::before {
     content: '';
@@ -26,7 +26,7 @@ const ListItem = styled.li`
     margin-right: 10px;
     width: 16px;
     height: 1px;
-    background-color: ${({ theme }) => rgba(theme.colors.anthracite, 0.4)};
+    background-color: ${({ theme }) => theme.list.background};
   }
 `;
 

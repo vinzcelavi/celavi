@@ -1,3 +1,5 @@
+import { rgba, lighten, darken } from 'polished';
+
 const fonts = {
   primary: '"Mada", sans-serif',
   secondary: '"Overpass Mono", sans-serif'
@@ -26,14 +28,29 @@ export const lightTheme = {
     white: colors.white
   },
   main: {
-    body: colors.white,
     text: colors.anthracite,
+    secondaryText: rgba(colors.anthracite, 0.8),
     background: colors.white,
+    selection: 'rgba(0, 0, 0, 0.1)'
+  },
+  header: {
+    jobTitle: darken(0.05, colors.primary),
+  },
+  link: {
+    boxShadow: rgba(colors.anthracite, 0.8),
+    boxShadowHover: rgba(colors.primary, 0.8),
+  },
+  swipeLink: {
+    bgHover: lighten(0.1, colors.primary),
   },
   toggle: {
     gradient: 'linear-gradient(#eeeeee, #fafafa)',
     border: '#eee',
     background: '#eee',
+  },
+  list: {
+    text: rgba(colors.anthracite, 0.8),
+    background: rgba(colors.anthracite, 0.4),
   },
   copyEmail: {
     text: colors.anthracite,
@@ -44,14 +61,29 @@ export const lightTheme = {
 export const darkTheme = {
   ...lightTheme,
   main: {
-    body: colors.anthracite,
     text: colors.white,
+    secondaryText: colors.grayLight,
     background: colors.anthracite,
+    selection: '#4d4426'
+  },
+  header: {
+    jobTitle: colors.primary,
+  },
+  link: {
+    boxShadow: colors.white,
+    boxShadowHover: rgba(colors.primary, 0.8),
+  },
+  swipeLink: {
+    bgHover: darken(0.1, colors.primary),
   },
   toggle: {
     gradient: 'linear-gradient(#091236, #1E215D)',
     border: colors.anthracite,
     background: '#101319',
+  },
+  list: {
+    text: colors.grayLight,
+    background: colors.grayLight,
   },
   copyEmail: {
     text: colors.grayLight,

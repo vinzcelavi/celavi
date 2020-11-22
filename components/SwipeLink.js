@@ -17,7 +17,7 @@ const StyledSwipeLink = styled.a`
   line-height: 1.5;
   font-weight: 700;
   text-decoration: none;
-  color: ${({ theme }) => theme.colors.anthracite};
+  color: ${({ theme }) => theme.main.text};
   overflow: hidden;
   transition: all 0.35s ${transFunction};
 
@@ -36,7 +36,7 @@ const StyledSwipeLink = styled.a`
     left: 0;
     width: 30%;
     height: 100%;
-    background-color: ${({ theme }) => lighten(0.1, theme.colors.primary)};
+    background-color: ${({ theme }) => theme.swipeLink.bgHover};
   }
 
   &::before {

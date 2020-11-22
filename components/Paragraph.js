@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { rgba } from 'polished';
 import { space, fontSize } from 'styled-system';
 
 const StyledParagraph = styled.p`
@@ -9,9 +8,10 @@ const StyledParagraph = styled.p`
   font-size: 1rem;
   line-height: 1.75;
   font-weight: 400;
-  color: ${({ theme }) => rgba(theme.colors.anthracite, 0.8)};
+  color: ${({ theme }) => theme.main.secondaryText};
   ${space};
   ${fontSize};
+  transition: all 0.45s ease;
 
   strong {
     font-weight: 700;

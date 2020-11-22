@@ -9,10 +9,11 @@ const StyledTitle = styled.h1`
   font-size: 40px;
   line-height: 1.5;
   font-weight: 300;
-  color: ${({ theme }) => theme.colors.anthracite};
+  color: ${({ theme }) => theme.main.text};
   cursor: default;
   ${space};
   ${fontSize};
+  transition: all 0.45s ease;
 `;
 
 const Title = ({ children, ...props }) => (

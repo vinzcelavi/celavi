@@ -14,11 +14,11 @@ const SocialLink = styled.a`
   letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
-  color: ${({ theme }) => rgba(theme.colors.anthracite, 0.9)};
+  color: ${({ theme }) => theme.main.text};
   transition: color 0.25s ease;
 
   &:hover {
-    color: ${({ theme }) => theme.colors.black};
+    color: ${({ theme }) => theme.main.text};
   }
 
   ${props =>

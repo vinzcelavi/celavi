@@ -6,13 +6,13 @@ export default createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     font-family: ${({ theme }) => theme.fonts.primary};
     color: ${({ theme }) => theme.main.text};
-    background-color: ${({ theme }) => theme.main.body};
+    background-color: ${({ theme }) => theme.main.background};
     overflow-y: auto;
     overflow-x: hidden;
     transition: all 0.45s ease;
   }
 
   ::selection {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: ${({ theme }) => theme.main.selection};
   }
 `;

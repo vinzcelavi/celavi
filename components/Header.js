@@ -21,6 +21,7 @@ const Name = styled.h1`
   line-height: 1.25;
   font-weight: 700;
   color: ${({ theme }) => theme.main.text};
+  transition: all 0.45s ease;
 `;
 
 const JobTitle = styled.h2`
@@ -31,14 +32,15 @@ const JobTitle = styled.h2`
   font-weight: 400;
   letter-spacing: 0.5px;
   text-transform: lowercase;
-  color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.header.jobTitle};
+  transition: all 0.45s ease;
 `;
 
 const Header = ({ position }) => (
   <StyledHeader position={position}>
     <ProfilePic />
     <Name>Vincent Bianciotto</Name>
-    <JobTitle>Web Designer</JobTitle>
+    <JobTitle>Front-end Designer</JobTitle>
   </StyledHeader>
 );
 

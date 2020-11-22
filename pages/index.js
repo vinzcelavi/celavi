@@ -41,8 +41,9 @@ const Hero = styled.p`
   font-size: 30px;
   line-height: 1.4;
   font-weight: 700;
-  color: ${({ theme }) => theme.colors.anthracite};
+  color: ${({ theme }) => theme.main.text};
   ${fontSize};
+  transition: all 0.45s ease;
 `;
 
 const Index = () => (
@@ -58,7 +59,7 @@ const Index = () => (
             Bonjour,
             <br />
             Je suis actuellement web designer chez{' '}
-            <Link href="https://www.main-gauche.com">Main Gauche</Link>, à
+            <Link href="https://www.main-gauche.com">MAINGAUCHE</Link>, à
             Montpellier.
           </Hero>
 
@@ -76,7 +77,7 @@ const Index = () => (
             <Job>
               <h2>
                 <SwipeLink href="https://www.main-gauche.com">
-                  Main Gauche
+                  MAINGAUCHE
                 </SwipeLink>
               </h2>
               <h3>2020 - Aujourd'hui</h3>

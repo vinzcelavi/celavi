@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const toggleWidth = 70;
-const togglePadding = 6;
+const toggleWidth = 74;
+const togglePadding = 8;
 const iconWidth = 20;
 
 const Style = styled.button`
@@ -25,12 +25,23 @@ const Style = styled.button`
   overflow: hidden;
   transition: all 0.45s ease;
 
+  &::before {
+    /* content: ''; */
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 3px 14px rgba(0, 0, 0, 0.1);
+  }
+
   > span {
     z-index: 10;
     position: absolute;
     top: 50%;
     left: 10px;
-    color: #555;
+    color: #6565b5;
     opacity: 1;
     transform: translateY(-50%);
     transition: all 0.45s ease;
@@ -38,7 +49,7 @@ const Style = styled.button`
     &:last-child {
       left: auto;
       right: 10px;
-      color: #999;
+      color: #fe5f77;
       opacity: 0;
     }
   }
@@ -57,7 +68,7 @@ const Style = styled.button`
 `;
 
 const IconWrapper = styled.div`
-  z-index: 20;
+  z-index: 10;
   position: relative;
   transform: translateX(${(toggleWidth - (togglePadding * 2)) - iconWidth}px);
   transition: all 0.45s ease;

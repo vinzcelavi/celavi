@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { rgba, darken } from 'polished';
 import { space } from 'styled-system';
 
 const Jobs = styled.ul`
@@ -16,7 +15,7 @@ const StyledJob = styled.li`
   font-size: 1rem;
   line-height: 1.75;
   font-weight: 400;
-  color: ${({ theme }) => rgba(theme.colors.anthracite, 0.9)};
+  color: ${({ theme }) => theme.main.text};
 
   h2 {
     margin: 0;

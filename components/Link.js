@@ -1,17 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
-import { rgba } from 'polished';
 
 const StyledLink = styled.a`
   text-decoration: none;
   font-weight: 700;
-  color: ${({ theme }) => theme.colors.anthracite};
-  box-shadow: inset 0 -2px 0 ${({ theme }) => rgba(theme.colors.anthracite, 0.8)};
+  color: ${({ theme }) => theme.main.text};
+  box-shadow: inset 0 -2px 0 ${({ theme }) => theme.link.boxShadow};
   transition: all 0.25s ease;
 
   &:hover {
     color: ${({ theme }) => theme.colors.primary};
-    box-shadow: inset 0 -2px 0 ${({ theme }) => rgba(theme.colors.primary, 0.8)};
+    box-shadow: inset 0 -2px 0 ${({ theme }) => theme.link.boxShadowHover};
   }
 `;
 
