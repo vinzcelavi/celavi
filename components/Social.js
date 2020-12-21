@@ -1,46 +1,44 @@
-import React from 'react'
-import styled from 'styled-components'
-import { rgba } from 'polished'
-import FONTS from '../constants/fonts'
-import COLORS from '../constants/colors'
+import React from 'react';
+import styled from 'styled-components';
+import { rgba } from 'polished';
 
 const StyledSocial = styled.div`
   display: flex;
-`
+`;
 
 const SocialLink = styled.a`
   margin-right: 20px;
-  font-family: ${FONTS.PRIMARY};
+  font-family: ${({ theme }) => theme.fonts.primary};
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 1px;
   text-decoration: none;
   text-transform: uppercase;
-  color: ${rgba(COLORS.ANTHRACITE, 0.9)};
+  color: ${({ theme }) => theme.main.text};
   transition: color 0.25s ease;
 
   &:hover {
-    color: ${COLORS.BLACK};
+    color: ${({ theme }) => theme.main.text};
   }
 
-  ${props => props.dribbble && `
+  ${props =>
+    props.dribbble &&
+    `
     &:hover {
       color: #ea4c89;
     }
   `}
 
-  ${props => props.twitter && `
+  ${props =>
+    props.twitter &&
+    `
     &:hover {
       color: #00aced;
     }
   `}
-`
+`;
 
-const Social = ({ children }) => (
-  <StyledSocial>
-    {children}
-  </StyledSocial>
-)
+const Social = ({ children }) => <StyledSocial>{children}</StyledSocial>;
 
-export default Social
-export { SocialLink }
+export default Social;
+export { SocialLink };

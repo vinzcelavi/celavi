@@ -1,24 +1,22 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { rgba } from 'polished';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import COLORS from '../constants/colors';
 
 const Wrapper = styled.span`
   position: relative;
-`
+`;
 
 const StyledCopyText = styled.span`
   padding: 2px 4px;
   text-decoration: none;
   font-weight: 700;
-  color: ${COLORS.ANTHRACITE};
+  color: ${({ theme }) => theme.copyEmail.text};
   border-radius: 3px;
   cursor: pointer;
   transition: 0.15s ease;
 
   &:hover {
-    background: ${rgba(COLORS.ANTHRACITE, 0.06)};
+    background: ${({ theme }) => theme.copyEmail.bgHover};
   }
 `;
 
@@ -31,10 +29,12 @@ const Message = styled.span`
   margin-left: 4px;
   font-size: 13px;
   font-weight: 700;
-  color: ${COLORS.PRIMARY};
+  color: ${({ theme }) => theme.colors.primary};
   opacity: 0;
 
-  ${props => props.copied && `
+  ${props =>
+    props.copied &&
+    `
     top: -60px;
     opacity: 1;
     transition: top 0.75s,
@@ -58,7 +58,11 @@ class CopyText extends Component {
   render() {
     return (
       <Wrapper>
-        <CopyToClipboard text={this.props.value} onCopy={this.onCopy} title="Copier dans le presse-papier">
+        <CopyToClipboard
+          text={this.props.value}
+          onCopy={this.onCopy}
+          title="Copier dans le presse-papier"
+        >
           <StyledCopyText>{this.props.value}</StyledCopyText>
         </CopyToClipboard>
 

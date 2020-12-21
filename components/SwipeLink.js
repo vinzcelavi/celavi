@@ -1,59 +1,57 @@
-import React from 'react'
-import styled from 'styled-components'
-import { lighten } from 'polished'
-import FONTS from '../constants/fonts'
-import COLORS from '../constants/colors'
+import React from 'react';
+import styled from 'styled-components';
+import { lighten } from 'polished';
 
-const TRANS_FUNCTION = 'cubic-bezier(0.77, 0, 0.175, 1)'
-const TRANS_DURATION_IN = '0.35s'
-const TRANS_DURATION_OUT = '0.5s'
-const HOVER_WIDTH = '70%'
+const transFunction = 'cubic-bezier(0.77, 0, 0.175, 1)';
+const transDurationIn = '0.35s';
+const transDurationOut = '0.5s';
+const hoverWidth = '70%';
 
 const StyledSwipeLink = styled.a`
   position: relative;
   display: inline-flex;
   margin: 0 -20px;
   padding: 1px 20px;
-  font-family: ${FONTS.PRIMARY};
+  font-family: ${({ theme }) => theme.fonts.primary};
   font-size: 24px;
   line-height: 1.5;
   font-weight: 700;
   text-decoration: none;
-  color: ${COLORS.ANTHRACITE};
+  color: ${({ theme }) => theme.main.text};
   overflow: hidden;
-  transition: all 0.35s ${TRANS_FUNCTION};
+  transition: all 0.35s ${transFunction};
 
   span {
     z-index: 20;
     position: relative;
-    transition: all ${TRANS_DURATION_IN} ${TRANS_FUNCTION};
+    transition: all ${transDurationIn} ${transFunction};
   }
 
   &::before,
   &::after {
     display: block;
-    content: "";
+    content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 30%;
     height: 100%;
-    background-color: ${lighten(0.1, COLORS.PRIMARY)};
+    background-color: ${({ theme }) => theme.swipeLink.bgHover};
   }
 
   &::before {
     z-index: 10;
     opacity: 1;
     transform: translateX(-110%);
-    transition: all 0s ${TRANS_FUNCTION};
+    transition: all 0s ${transFunction};
   }
 
   &::after {
     z-index: 5;
-    width: ${HOVER_WIDTH};
+    width: ${hoverWidth};
     opacity: 1;
     transform: translateX(190%);
-    transition: all ${TRANS_DURATION_OUT} ${TRANS_FUNCTION};
+    transition: all ${transDurationOut} ${transFunction};
   }
 
   &:hover {
@@ -63,26 +61,26 @@ const StyledSwipeLink = styled.a`
 
     &::before,
     &::after {
-      width: ${HOVER_WIDTH};
+      width: ${hoverWidth};
       opacity: 1;
     }
 
     &::before {
       transform: translateX(0);
-      transition: all ${TRANS_DURATION_IN} ${TRANS_FUNCTION};
+      transition: all ${transDurationIn} ${transFunction};
     }
 
     &::after {
       transform: translateX(0);
-      transition: all 0s ${TRANS_DURATION_IN} ${TRANS_FUNCTION};
+      transition: all 0s ${transDurationIn} ${transFunction};
     }
   }
-`
+`;
 
 const SwipeLink = ({ children, ...props }) => (
   <StyledSwipeLink {...props}>
     <span>{children}</span>
   </StyledSwipeLink>
-)
+);
 
-export default SwipeLink
+export default SwipeLink;

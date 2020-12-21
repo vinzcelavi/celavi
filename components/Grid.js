@@ -1,8 +1,5 @@
-import React from "react";
 import styled from "styled-components";
 import { flexDirection, width } from "styled-system";
-import FONTS from "../constants/fonts";
-import COLORS from "../constants/colors";
 
 const Grid = styled.div`
   display: flex;
