@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const toggleWidth = 74;
 const togglePadding = 8;
 const iconWidth = 20;
 
@@ -14,27 +13,15 @@ const Style = styled.button`
   top: 1rem;
   right: 1rem;
   margin: 0;
-  width: ${toggleWidth}px;
   padding: ${togglePadding}px;
   display: flex;
   align-items: center;
   font-size: 0.815rem;
-  background: ${({ theme }) => theme.toggle.background};
+  background: ${({ theme }) => theme.main.background};
   cursor: pointer;
   border-radius: 1000px;
   overflow: hidden;
   transition: all 0.45s ease;
-
-  &::before {
-    /* content: ''; */
-    z-index: 20;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    box-shadow: inset 0 3px 14px rgba(0, 0, 0, 0.1);
-  }
 
   > span {
     z-index: 10;
@@ -70,7 +57,6 @@ const Style = styled.button`
 const IconWrapper = styled.div`
   z-index: 10;
   position: relative;
-  transform: translateX(${(toggleWidth - (togglePadding * 2)) - iconWidth}px);
   transition: all 0.45s ease;
 
   ${({ lightTheme }) =>
@@ -96,7 +82,7 @@ const Icon = styled.div`
     right: -2px;
     width: 90%;
     height: 90%;
-    background: ${({ theme }) => theme.toggle.background};
+    background: ${({ theme }) => theme.main.background};
     border-radius: 50%;
     transform: translate(0, 0);
     transition: all 0.45s ease;
@@ -118,11 +104,9 @@ const ThemeToggle = ({ theme, toggleTheme }) => {
   
   return (
     <Style lightTheme={isLight} onClick={toggleTheme}>
-      <span>Light</span>
       <IconWrapper lightTheme={isLight}>
         <Icon lightTheme={isLight} />
       </IconWrapper>
-      <span>Dark</span>
     </Style>
   );
 };
