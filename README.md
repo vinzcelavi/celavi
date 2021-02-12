@@ -11,4 +11,4 @@ yarn dev
 
 ## Deploy
 
-Automatically deploy on [Netlify](https://netlify.com)
+Automatically deploy on [Netlify](https://app.netlify.com/sites/celavi/deploys)
