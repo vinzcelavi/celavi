@@ -44,6 +44,10 @@ const Hero = styled.p`
   color: ${({ theme }) => theme.main.text};
   ${fontSize};
   transition: all 0.45s ease;
+
+  > span {
+    white-space: nowrap;
+  }
 `;
 
 const Index = () => (
@@ -55,15 +59,13 @@ const Index = () => (
 
       <GridCell width={['auto', 'auto', '67%']}>
         <HeroWrapper>
-          <Hero fontSize={[30, 46]}>
+          <Hero fontSize={[38, 62]}>
             Bonjour,
             <br />
-            Je suis actuellement web designer chez{' '}
-            <Link href="https://www.main-gauche.com">MAINGAUCHE</Link>, à
-            Montpellier.
+            Je suis <span>développeur web</span> freelance à Montpellier, depuis 2012.
           </Hero>
 
-          <Paragraph fontSize={[16, 18]}>
+          <Paragraph fontSize={[18, 20]}>
             Par le passé j'ai travaillé pour Axeptio, Lunchr, Elium et Teads. Je
             suis fan des interfaces web minimalistes et soignées. Mes passions
             se résument en 3 choses essentielles : le Squash, la bière et faire
@@ -80,7 +82,7 @@ const Index = () => (
                   MAINGAUCHE
                 </SwipeLink>
               </h2>
-              <h3>2020 - Aujourd'hui</h3>
+              <h3>2020 - 2021</h3>
               <Paragraph>
                 Développement front-end du futur site internet en React et
                 styled-components.
@@ -133,14 +135,12 @@ const Index = () => (
         <Section width={['auto', 600]}>
           <Title fontSize={50}>Technologies</Title>
           <List ml={[0, 40]}>
-            <ListItem>Javascript</ListItem>
-            <ListItem>React</ListItem>
-            <ListItem>Styled components</ListItem>
-            <ListItem>CSS • Sass • Scss</ListItem>
-            <ListItem>Sketch</ListItem>
+            <ListItem>ReactJS</ListItem>
+            <ListItem>Styled-components</ListItem>
+            <ListItem>Gatsby•NextJS</ListItem>
+            <ListItem>HTML•CSS•Javascript</ListItem>
+            <ListItem>Figma•Sketch•InDesign</ListItem>
             <ListItem>git</ListItem>
-            <ListItem>jQuery</ListItem>
-            <ListItem>HTML • Haml • ERB • MJML</ListItem>
           </List>
         </Section>
 
