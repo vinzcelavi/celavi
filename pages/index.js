@@ -66,7 +66,7 @@ const Index = () => (
           </Hero>
 
           <Paragraph fontSize={[18, 20]}>
-            Par le passé j'ai travaillé pour Axeptio, Lunchr, Elium et Teads. Je
+            Par le passé j'ai travaillé pour Axeptio, Swile, Elium et Teads. Je
             suis fan des interfaces web minimalistes et soignées. Mes passions
             se résument en 3 choses essentielles : le Squash, la bière et faire
             des blagues. Sans ordre de préférence.
@@ -100,7 +100,7 @@ const Index = () => (
             </Job>
             <Job>
               <h2>
-                <SwipeLink href="https://www.lunchr.co">Lunchr</SwipeLink>
+                <SwipeLink href="https://www.swile.co">Swile</SwipeLink>
               </h2>
               <h3>2016 - 2018</h3>
               <Paragraph>
