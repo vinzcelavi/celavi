@@ -6,7 +6,6 @@ import Grid, { GridCell } from '../components/Grid';
 import Header from '../components/Header';
 import Title from '../components/Title';
 import Paragraph from '../components/Paragraph';
-import Link from '../components/Link';
 import Job, { Jobs } from '../components/Job';
 import SwipeLink from '../components/SwipeLink';
 import CopyText from '../components/CopyText';
@@ -137,8 +136,8 @@ const Index = () => (
           <List ml={[0, 40]}>
             <ListItem>ReactJS</ListItem>
             <ListItem>Styled-components</ListItem>
-            <ListItem>Gatsby•NextJS</ListItem>
-            <ListItem>HTML•CSS•Javascript</ListItem>
+            <ListItem>GatsbyJS•NextJS</ListItem>
+            <ListItem>HTML5•CSS3•Javascript</ListItem>
             <ListItem>Figma•Sketch•InDesign</ListItem>
             <ListItem>git</ListItem>
           </List>

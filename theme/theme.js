@@ -22,7 +22,7 @@ export const lightTheme = {
     secondary: fonts.secondary
   },
   colors: {
-    primary: colors.primary,
+    primary: darken(0.08, colors.primary),
     anthracite: colors.anthracite,
     black: colors.black,
     white: colors.white
@@ -60,6 +60,9 @@ export const lightTheme = {
 
 export const darkTheme = {
   ...lightTheme,
+  colors: {
+    primary: colors.primary,
+  },
   main: {
     text: colors.white,
     secondaryText: colors.grayLight,
