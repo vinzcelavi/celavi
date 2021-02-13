@@ -61,7 +61,7 @@ const Index = () => (
           <Hero fontSize={[38, 62]}>
             Bonjour,
             <br />
-            Je suis <span>développeur web</span> freelance à Montpellier, depuis 2012.
+            Je suis <span>développeur web</span> à Montpellier, depuis 2012.
           </Hero>
 
           <Paragraph fontSize={[18, 20]}>
