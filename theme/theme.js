@@ -9,7 +9,7 @@ const colors = {
   white: '#ffffff',
   black: '#000000',
   grayLight: '#c0c0c0',
-  anthracite: '#191c23',
+  dark: '#161616',
   primary: '#f1c40f',
   blue: '#54a0ff',
   green: '#2caf90',
@@ -23,13 +23,13 @@ export const lightTheme = {
   },
   colors: {
     primary: darken(0.08, colors.primary),
-    anthracite: colors.anthracite,
+    dark: colors.dark,
     black: colors.black,
     white: colors.white
   },
   main: {
-    text: colors.anthracite,
-    secondaryText: rgba(colors.anthracite, 0.8),
+    text: colors.dark,
+    secondaryText: rgba(colors.dark, 0.8),
     background: colors.white,
     selection: 'rgba(0, 0, 0, 0.1)'
   },
@@ -37,7 +37,7 @@ export const lightTheme = {
     jobTitle: darken(0.05, colors.primary),
   },
   link: {
-    boxShadow: rgba(colors.anthracite, 0.8),
+    boxShadow: rgba(colors.dark, 0.8),
     boxShadowHover: rgba(colors.primary, 0.8),
   },
   swipeLink: {
@@ -49,11 +49,11 @@ export const lightTheme = {
     background: '#eee',
   },
   list: {
-    text: rgba(colors.anthracite, 0.8),
-    background: rgba(colors.anthracite, 0.4),
+    text: rgba(colors.dark, 0.8),
+    background: rgba(colors.dark, 0.4),
   },
   copyEmail: {
-    text: colors.anthracite,
+    text: colors.dark,
     bgHover: '#eeeeee'
   }
 };
@@ -66,7 +66,7 @@ export const darkTheme = {
   main: {
     text: colors.white,
     secondaryText: colors.grayLight,
-    background: colors.anthracite,
+    background: colors.dark,
     selection: '#4d4426'
   },
   header: {
@@ -81,7 +81,7 @@ export const darkTheme = {
   },
   toggle: {
     gradient: 'linear-gradient(#091236, #1E215D)',
-    border: colors.anthracite,
+    border: colors.dark,
     background: '#101319',
   },
   list: {
@@ -90,6 +90,6 @@ export const darkTheme = {
   },
   copyEmail: {
     text: colors.grayLight,
-    bgHover: colors.anthracite
+    bgHover: colors.dark
   }
 };

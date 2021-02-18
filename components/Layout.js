@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Normalize } from 'styled-normalize';
 import Head from 'next/head';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from '../theme/theme';
@@ -13,6 +14,7 @@ const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={themeMode}>
       <GlobalStyles />
+      <Normalize />
 
       <Head>
         <title>Vincent Bianciotto | Front-End Designer</title>

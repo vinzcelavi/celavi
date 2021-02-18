@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const togglePadding = 8;
 const iconWidth = 20;
 
 const Style = styled.button`
@@ -9,11 +8,10 @@ const Style = styled.button`
   outline: none;
   background: none;
   -webkit-appearance: none;
-  position: absolute;
+  position: fixed;
   top: 1rem;
   right: 1rem;
   margin: 0;
-  padding: ${togglePadding}px;
   display: flex;
   align-items: center;
   font-size: 0.815rem;
@@ -91,7 +89,7 @@ const Icon = styled.div`
   ${({ lightTheme }) =>
     lightTheme &&
     `
-    background: linear-gradient(25deg, #ff3c71, #ff8815);
+    background: linear-gradient(25deg, #efa108, #fbd7a5);
 
     &::before {
       transform: translate(100%, -100%);
