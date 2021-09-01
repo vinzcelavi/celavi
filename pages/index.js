@@ -1,6 +1,5 @@
 import React from 'react';
-import Head from 'next/head'
-import styled from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import media from 'styled-media-query';
 import { space, width, fontSize } from 'styled-system';
 import Grid, { GridCell } from '../components/Grid';
@@ -51,136 +50,123 @@ const Hero = styled.p`
 `;
 
 const Index = () => (
-  <>
-    <Container width={['auto', '80%']} px={[30, 0]}>
-      <Grid flexDirection={['column', 'column', 'row']}>
-        <GridCell width={['auto', 'auto', '33%']}>
-          <Header position={['relative', 'relative', 'fixed']} />
-        </GridCell>
+  <Container width={['auto', '80%']} px={[30, 0]}>
+    <Grid flexDirection={['column', 'column', 'row']}>
+      <GridCell width={['auto', 'auto', '33%']}>
+        <Header position={['relative', 'relative', 'fixed']} />
+      </GridCell>
 
-        <GridCell width={['auto', 'auto', '67%']}>
-          <HeroWrapper>
-            <Hero fontSize={[38, 62]}>
-              Bonjour,
-              <br />
-              Je suis <span>développeur web</span> à Montpellier, depuis 2012.
-            </Hero>
+      <GridCell width={['auto', 'auto', '67%']}>
+        <HeroWrapper>
+          <Hero fontSize={[38, 62]}>
+            Bonjour,
+            <br />
+            Je suis <span>développeur web</span> à Montpellier, depuis 2012.
+          </Hero>
 
-            <Paragraph fontSize={[18, 20]}>
-              Par le passé j'ai travaillé pour Axeptio, Swile, Elium et Teads. Je
-              suis fan des interfaces web minimalistes et soignées. Mes passions
-              se résument en 3 choses essentielles : le Squash, la bière et faire
-              des blagues. Sans ordre de préférence.
-            </Paragraph>
-          </HeroWrapper>
+          <Paragraph fontSize={[18, 20]}>
+            Par le passé j'ai travaillé pour Axeptio, Swile, Elium et Teads. Je
+            suis fan des interfaces web minimalistes et soignées. Mes passions
+            se résument en 3 choses essentielles : le Squash, la bière et faire
+            des blagues. Sans ordre de préférence.
+          </Paragraph>
+        </HeroWrapper>
 
-          <Section width={['auto', 600]}>
-            <Title fontSize={[40, 50]}>Expérience</Title>
-            <Jobs ml={[0, 40]}>
-              <Job>
-                <h2>
-                  <SwipeLink href="https://www.main-gauche.com">
-                    MAINGAUCHE
-                  </SwipeLink>
-                </h2>
-                <h3>2020 - 2021</h3>
-                <Paragraph>
-                  Développement front-end du futur site internet en React et
-                  styled-components.
-                </Paragraph>
-              </Job>
-              <Job>
-                <h2>
-                  <SwipeLink href="https://www.axeptio.eu">Axeptio</SwipeLink>
-                </h2>
-                <h3>2018 - 2020</h3>
-                <Paragraph>
-                  Développement des interfaces utilisateurs et d'applications web
-                  modernes avec React et styled-components.
-                </Paragraph>
-              </Job>
-              <Job>
-                <h2>
-                  <SwipeLink href="https://www.swile.co">Swile</SwipeLink>
-                </h2>
-                <h3>2016 - 2018</h3>
-                <Paragraph>
-                  Intégration des maquettes de l'application web avec ReactJS et
-                  styled-components.
-                </Paragraph>
-              </Job>
-              <Job>
-                <h2>
-                  <SwipeLink href="https://www.elium.tv">Elium</SwipeLink>
-                </h2>
-                <h3>2017</h3>
-                <Paragraph>
-                  Développement de web components AngularJS et Sass.
-                </Paragraph>
-              </Job>
-              <Job>
-                <h2>
-                  <SwipeLink href="https://teads.tv">Teads</SwipeLink>
-                </h2>
-                <h3>2014 - 2016</h3>
-                <Paragraph>
-                  UI/UX Design et intégration des designs sur le Dashboard de
-                  gestion des campagnes.
-                  <br />
-                  Développement de web components AngularJS et Sass.
-                </Paragraph>
-              </Job>
-            </Jobs>
-          </Section>
+        <Section width={['auto', 600]}>
+          <Title fontSize={[40, 50]}>Expérience</Title>
+          <Jobs ml={[0, 40]}>
+            <Job>
+              <h2>
+                <SwipeLink href="https://www.main-gauche.com">
+                  MAINGAUCHE
+                </SwipeLink>
+              </h2>
+              <h3>2020 - 2021</h3>
+              <Paragraph>
+                Développement front-end du futur site internet en React et
+                styled-components.
+              </Paragraph>
+            </Job>
+            <Job>
+              <h2>
+                <SwipeLink href="https://www.axeptio.eu">Axeptio</SwipeLink>
+              </h2>
+              <h3>2018 - 2020</h3>
+              <Paragraph>
+                Développement des interfaces utilisateurs et d'applications web
+                modernes avec React et styled-components.
+              </Paragraph>
+            </Job>
+            <Job>
+              <h2>
+                <SwipeLink href="https://www.swile.co">Swile</SwipeLink>
+              </h2>
+              <h3>2016 - 2018</h3>
+              <Paragraph>
+                Intégration des maquettes de l'application web avec ReactJS et
+                styled-components.
+              </Paragraph>
+            </Job>
+            <Job>
+              <h2>
+                <SwipeLink href="https://www.elium.tv">Elium</SwipeLink>
+              </h2>
+              <h3>2017</h3>
+              <Paragraph>
+                Développement de web components AngularJS et Sass.
+              </Paragraph>
+            </Job>
+            <Job>
+              <h2>
+                <SwipeLink href="https://teads.tv">Teads</SwipeLink>
+              </h2>
+              <h3>2014 - 2016</h3>
+              <Paragraph>
+                UI/UX Design et intégration des designs sur le Dashboard de
+                gestion des campagnes.
+                <br />
+                Développement de web components AngularJS et Sass.
+              </Paragraph>
+            </Job>
+          </Jobs>
+        </Section>
 
-          <Section width={['auto', 600]}>
-            <Title fontSize={50}>Technologies</Title>
-            <List ml={[0, 40]}>
-              <ListItem>ReactJS</ListItem>
-              <ListItem>Styled-components</ListItem>
-              <ListItem>GatsbyJS•NextJS</ListItem>
-              <ListItem>HTML5•CSS3•Javascript</ListItem>
-              <ListItem>Figma•Sketch•InDesign</ListItem>
-              <ListItem>git</ListItem>
-            </List>
-          </Section>
+        <Section width={['auto', 600]}>
+          <Title fontSize={50}>Technologies</Title>
+          <List ml={[0, 40]}>
+            <ListItem>ReactJS</ListItem>
+            <ListItem>Styled-components</ListItem>
+            <ListItem>GatsbyJS•NextJS</ListItem>
+            <ListItem>HTML5•CSS3•Javascript</ListItem>
+            <ListItem>Figma•Sketch•InDesign</ListItem>
+            <ListItem>git</ListItem>
+          </List>
+        </Section>
 
-          <Section width={['auto', 600]}>
-            <Title fontSize={50}>Me contacter</Title>
-            <Paragraph mb={60}>
-              Pour toute demande spécifique, ou juste pour le fun, vous pouvez me
-              contacter sur{' '}
-              <CopyText
-                value="&#118;&#105;&#110;&#x63;&#101;&#x6e;&#116;&#64;&#99;&#x65;&#108;&#x61;&#x76;&#105;&#x2e;&#x66;&#x72;"
-                message="copiée"
-              />
-              . Je me ferai un plaisir de vous répondre.
-            </Paragraph>
-            <Social>
-              <SocialLink href="https://dribbble.com/vinzcelavi" dribbble>
-                Dribbble
-              </SocialLink>
-              <SocialLink href="https://github.com/vinzcelavi">Github</SocialLink>
-              <SocialLink href="https://www.twitter.com/vinzcelavi" twitter>
-                Twitter
-              </SocialLink>
-            </Social>
-          </Section>
-        </GridCell>
-      </Grid>
-    </Container>
-    <script dangerouslySetInnerHTML={{
-      __html: `var el = document.createElement('script');
-        el.setAttribute('src', 'https://static.axept.io/sdk.js');
-        el.setAttribute('type', 'text/javascript');
-        el.setAttribute('async', true);
-        el.setAttribute('data-id', '5cbf13f207dbd70cd32ec23d');
-        if (document.body !== null) {
-          document.body.appendChild(el);
-        }`
-    }}>
-    </script>
-  </>
+        <Section width={['auto', 600]}>
+          <Title fontSize={50}>Me contacter</Title>
+          <Paragraph mb={60}>
+            Pour toute demande spécifique, ou juste pour le fun, vous pouvez me
+            contacter sur{' '}
+            <CopyText
+              value="&#118;&#105;&#110;&#x63;&#101;&#x6e;&#116;&#64;&#99;&#x65;&#108;&#x61;&#x76;&#105;&#x2e;&#x66;&#x72;"
+              message="copiée"
+            />
+            . Je me ferai un plaisir de vous répondre.
+          </Paragraph>
+          <Social>
+            <SocialLink href="https://dribbble.com/vinzcelavi" dribbble>
+              Dribbble
+            </SocialLink>
+            <SocialLink href="https://github.com/vinzcelavi">Github</SocialLink>
+            <SocialLink href="https://www.twitter.com/vinzcelavi" twitter>
+              Twitter
+            </SocialLink>
+          </Social>
+        </Section>
+      </GridCell>
+    </Grid>
+  </Container>
 );
 
 export default Index;
