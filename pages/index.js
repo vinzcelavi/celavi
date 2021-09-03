@@ -77,6 +77,16 @@ const Index = () => (
           <Jobs ml={[0, 40]}>
             <Job>
               <h2>
+                <SwipeLink href="https://www.axeptio.eu">Axeptio</SwipeLink>
+              </h2>
+              <h3>2018 - aujourd'hui</h3>
+              <Paragraph>
+                Développement des interfaces utilisateurs et d'applications web
+                modernes avec React et styled-components.
+              </Paragraph>
+            </Job>
+            <Job>
+              <h2>
                 <SwipeLink href="https://www.main-gauche.com">
                   MAINGAUCHE
                 </SwipeLink>
@@ -85,16 +95,6 @@ const Index = () => (
               <Paragraph>
                 Développement front-end du futur site internet en React et
                 styled-components.
-              </Paragraph>
-            </Job>
-            <Job>
-              <h2>
-                <SwipeLink href="https://www.axeptio.eu">Axeptio</SwipeLink>
-              </h2>
-              <h3>2018 - 2020</h3>
-              <Paragraph>
-                Développement des interfaces utilisateurs et d'applications web
-                modernes avec React et styled-components.
               </Paragraph>
             </Job>
             <Job>
