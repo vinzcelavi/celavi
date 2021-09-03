@@ -2,7 +2,7 @@
  * @type {import('next').NextConfig}
  */
  const nextConfig = {
-  distDir: 'out_publish',
+  distDir: 'out',
 }
 
 module.exports = nextConfig
