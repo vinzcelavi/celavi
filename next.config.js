@@ -2,7 +2,7 @@
  * @type {import('next').NextConfig}
  */
  const nextConfig = {
-  // target: 'serverless'
+  distDir: 'out_publish',
 }
 
 module.exports = nextConfig
