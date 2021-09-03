@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "next",
-    "build": "next build",
-    "postbuild": "next-on-netlify"
+    "build": "next build"
   },
   "keywords": [
     "Nextjs",
