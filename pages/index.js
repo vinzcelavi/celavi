@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { createGlobalStyle } from 'styled-components';
+import styled from 'styled-components';
 import media from 'styled-media-query';
 import { space, width, fontSize } from 'styled-system';
 import Grid, { GridCell } from '../components/Grid';
