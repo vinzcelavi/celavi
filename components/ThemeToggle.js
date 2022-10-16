@@ -112,7 +112,7 @@ const ThemeToggle = ({ theme, toggleTheme }) => {
 
 ThemeToggle.propTypes = {
   theme: PropTypes.any,
-  toggleTheme: PropTypes.function
+  toggleTheme: PropTypes.func
 };
 
 export default ThemeToggle;
