@@ -83,7 +83,7 @@ const Index = () => (
           </Hero>
 
           <Paragraph fontSize={[18, 20]}>
-            Par le passé j'ai notamment travaillé pour Swile, Elium et Teads. Je
+            Par le passé j‘ai notamment travaillé pour Swile, Elium et Teads. Je
             suis fan des interfaces web minimalistes et soignées. Mes passions
             se résument en 3 choses essentielles: le Squash, la bière et faire
             des blagues. Sans ordre de préférence.
@@ -97,9 +97,9 @@ const Index = () => (
               <h2>
                 <SwipeLink href="https://www.axeptio.eu">Axeptio</SwipeLink>
               </h2>
-              <h3>2018 - aujourd'hui</h3>
+              <h3>2018 - aujourd‘hui</h3>
               <Paragraph>
-                Développement des interfaces utilisateurs et d'applications web
+                Développement des interfaces utilisateurs et d‘applications web
                 modernes avec React et styled-components.
               </Paragraph>
             </Job>
@@ -121,7 +121,7 @@ const Index = () => (
               </h2>
               <h3>2016 - 2018</h3>
               <Paragraph>
-                Intégration des maquettes de l'application web avec ReactJS et
+                Intégration des maquettes de l‘application web avec ReactJS et
                 styled-components.
               </Paragraph>
             </Job>

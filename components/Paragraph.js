@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { space, fontSize } from 'styled-system';
+import PropTypes from 'prop-types';
 
 const StyledParagraph = styled.p`
   margin-bottom: 30px;
@@ -21,5 +22,9 @@ const StyledParagraph = styled.p`
 const Paragraph = ({ children, ...props }) => (
   <StyledParagraph {...props}>{children}</StyledParagraph>
 );
+
+Paragraph.propTypes = {
+  children: PropTypes.any
+};
 
 export default Paragraph;

@@ -6,6 +6,7 @@ import { lightTheme, darkTheme } from '../theme/theme';
 import useDarkMode from '../theme/useDarkMode';
 import GlobalStyles from '../theme/global';
 import ThemeToggle from './ThemeToggle';
+import PropTypes from 'prop-types';
 
 const Layout = ({ children }) => {
   const [theme, toggleTheme] = useDarkMode();
@@ -59,6 +60,10 @@ const Layout = ({ children }) => {
       {children}
     </ThemeProvider>
   );
+};
+
+Layout.propTypes = {
+  children: PropTypes.any
 };
 
 export default Layout;

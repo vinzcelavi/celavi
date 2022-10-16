@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const StyledLink = styled.a`
   text-decoration: none;
@@ -17,5 +18,9 @@ const StyledLink = styled.a`
 const Link = ({ children, ...props }) => (
   <StyledLink {...props}>{children}</StyledLink>
 );
+
+Link.propTypes = {
+  children: PropTypes.any
+};
 
 export default Link;

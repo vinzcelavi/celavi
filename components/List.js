@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { space } from 'styled-system';
-import { rgba } from 'polished';
+import PropTypes from 'prop-types';
 
 const StyledList = styled.ul`
   list-style: none;
@@ -33,6 +33,10 @@ const ListItem = styled.li`
 const List = ({ children, ...props }) => (
   <StyledList {...props}>{children}</StyledList>
 );
+
+List.propTypes = {
+  children: PropTypes.any
+};
 
 export default List;
 export { ListItem };

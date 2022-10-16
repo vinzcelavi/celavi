@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { space, fontSize } from 'styled-system';
+import PropTypes from 'prop-types';
 
 const StyledTitle = styled.h1`
   margin: 0;
@@ -19,5 +20,9 @@ const StyledTitle = styled.h1`
 const Title = ({ children, ...props }) => (
   <StyledTitle {...props}>{children}</StyledTitle>
 );
+
+Title.propTypes = {
+  children: PropTypes.any
+};
 
 export default Title;

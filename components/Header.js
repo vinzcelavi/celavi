@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { position } from 'styled-system';
 import ProfilePic from './ProfilePic';
+import PropTypes from 'prop-types';
 
 const StyledHeader = styled.div`
   position: relative;
@@ -42,5 +43,9 @@ const Header = ({ position }) => (
     <JobTitle>Product Designer</JobTitle>
   </StyledHeader>
 );
+
+Header.propTypes = {
+  position: PropTypes.string
+};
 
 export default Header;

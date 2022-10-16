@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { rgba } from 'polished';
+import PropTypes from 'prop-types';
 
 const StyledSocial = styled.div`
   display: flex;
@@ -39,6 +39,10 @@ const SocialLink = styled.a`
 `;
 
 const Social = ({ children }) => <StyledSocial>{children}</StyledSocial>;
+
+Social.propTypes = {
+  children: PropTypes.any
+};
 
 export default Social;
 export { SocialLink };

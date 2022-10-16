@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { space } from 'styled-system';
+import PropTypes from 'prop-types';
 
 const Jobs = styled.ul`
   list-style: none;
@@ -34,6 +35,10 @@ const StyledJob = styled.li`
 `;
 
 const Job = ({ children }) => <StyledJob>{children}</StyledJob>;
+
+Job.propTypes = {
+  children: PropTypes.any
+};
 
 export default Job;
 export { Jobs };

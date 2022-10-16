@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const iconWidth = 20;
 
@@ -107,6 +108,11 @@ const ThemeToggle = ({ theme, toggleTheme }) => {
       </IconWrapper>
     </Style>
   );
+};
+
+ThemeToggle.propTypes = {
+  theme: PropTypes.any,
+  toggleTheme: PropTypes.function
 };
 
 export default ThemeToggle;

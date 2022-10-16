@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { lighten } from 'polished';
+import PropTypes from 'prop-types';
 
 const transFunction = 'cubic-bezier(0.77, 0, 0.175, 1)';
 const transDurationIn = '0.35s';
@@ -82,5 +82,9 @@ const SwipeLink = ({ children, ...props }) => (
     <span>{children}</span>
   </StyledSwipeLink>
 );
+
+SwipeLink.propTypes = {
+  children: PropTypes.any
+};
 
 export default SwipeLink;

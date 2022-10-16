@@ -1,6 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { useState } from 'react';
 import styled from 'styled-components';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
+import PropTypes from 'prop-types';
 
 const Wrapper = styled.span`
   position: relative;
@@ -38,39 +40,39 @@ const Message = styled.span`
     `
     top: -60px;
     opacity: 1;
-    transition: top 0.75s,
+    transition: top 0.35s,
                 opacity 0.15s;
   `};
 `;
 
-class CopyText extends Component {
-  state = {
-    value: '',
-    copied: false
-  };
+const CopyText = ({ value, message }) => {
+  const [copied, setCopied] = useState(false);
 
-  onCopy = () => {
-    this.setState({ copied: true });
+  const onCopy = () => {
+    setCopied(true);
     setTimeout(() => {
-      this.setState({ copied: false });
-    }, 2000);
+      setCopied(false);
+    }, 1000);
   };
 
-  render() {
     return (
       <Wrapper>
         <CopyToClipboard
-          text={this.props.value}
-          onCopy={this.onCopy}
+          text={value}
+          onCopy={onCopy}
           title="Copier dans le presse-papier"
         >
-          <StyledCopyText>{this.props.value}</StyledCopyText>
+          <StyledCopyText>{value}</StyledCopyText>
         </CopyToClipboard>
 
-        <Message copied={this.state.copied}>{this.props.message}</Message>
+        <Message copied={copied}>{message}</Message>
       </Wrapper>
     );
-  }
 }
+
+CopyText.propTypes = {
+  value: PropTypes.string,
+  message: PropTypes.string
+};
 
 export default CopyText;
