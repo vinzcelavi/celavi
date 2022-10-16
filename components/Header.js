@@ -31,7 +31,6 @@ const JobTitle = styled.h2`
   line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0.5px;
-  text-transform: lowercase;
   color: ${({ theme }) => theme.header.jobTitle};
   transition: all 0.45s ease;
 `;
@@ -40,7 +39,7 @@ const Header = ({ position }) => (
   <StyledHeader position={position}>
     <ProfilePic />
     <Name>Vincent Bianciotto</Name>
-    <JobTitle>Web Developer</JobTitle>
+    <JobTitle>Product Designer</JobTitle>
   </StyledHeader>
 );
 

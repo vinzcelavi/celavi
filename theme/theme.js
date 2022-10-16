@@ -90,6 +90,7 @@ export const darkTheme = {
   },
   copyEmail: {
     text: colors.grayLight,
-    bgHover: colors.dark
+    textHover: colors.dark,
+    bgHover: colors.white
   }
 };

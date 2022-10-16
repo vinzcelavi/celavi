@@ -7,7 +7,7 @@ const Wrapper = styled.span`
 `;
 
 const StyledCopyText = styled.span`
-  padding: 2px 4px;
+  padding: 2px 4px 1px;
   text-decoration: none;
   font-weight: 700;
   color: ${({ theme }) => theme.copyEmail.text};
@@ -16,6 +16,7 @@ const StyledCopyText = styled.span`
   transition: 0.15s ease;
 
   &:hover {
+    color: ${({ theme }) => theme.copyEmail.textHover};
     background: ${({ theme }) => theme.copyEmail.bgHover};
   }
 `;

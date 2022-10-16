@@ -44,6 +44,24 @@ const Hero = styled.p`
   ${fontSize};
   transition: all 0.45s ease;
 
+  a {
+    display: inline-block;
+    text-decoration: none;
+    line-height: 0.8;
+    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.25);
+    transition: all 0.45s ease;
+
+    &,
+    &:visited {
+      color: ${({ theme }) => theme.main.text};
+    }
+
+    &:hover {
+      color: ${({ theme }) => theme.colors.primary};
+      box-shadow: 0 1px 0 0 ${({ theme }) => theme.colors.primary};
+    }
+  }
+
   > span {
     white-space: nowrap;
   }
@@ -61,13 +79,13 @@ const Index = () => (
           <Hero fontSize={[38, 62]}>
             Bonjour,
             <br />
-            Je suis <span>développeur web</span> à Montpellier, depuis 2012.
+            Je suis <span>Product Designer</span> chez <a href="https://axeptio.eu">Axeptio</a> à Montpellier, depuis 2018.
           </Hero>
 
           <Paragraph fontSize={[18, 20]}>
-            Par le passé j'ai travaillé pour Axeptio, Swile, Elium et Teads. Je
+            Par le passé j'ai notamment travaillé pour Swile, Elium et Teads. Je
             suis fan des interfaces web minimalistes et soignées. Mes passions
-            se résument en 3 choses essentielles : le Squash, la bière et faire
+            se résument en 3 choses essentielles: le Squash, la bière et faire
             des blagues. Sans ordre de préférence.
           </Paragraph>
         </HeroWrapper>
@@ -134,12 +152,12 @@ const Index = () => (
         <Section width={['auto', 600]}>
           <Title fontSize={50}>Technologies</Title>
           <List ml={[0, 40]}>
+            <ListItem>git</ListItem>
+            <ListItem>Figma</ListItem>
             <ListItem>ReactJS</ListItem>
             <ListItem>Styled-components</ListItem>
-            <ListItem>GatsbyJS•NextJS</ListItem>
+            <ListItem>Remixrun•NextJS•GatsbyJS</ListItem>
             <ListItem>HTML5•CSS3•Javascript</ListItem>
-            <ListItem>Figma•Sketch•InDesign</ListItem>
-            <ListItem>git</ListItem>
           </List>
         </Section>
 
@@ -152,7 +170,7 @@ const Index = () => (
               value="&#118;&#105;&#110;&#x63;&#101;&#x6e;&#116;&#64;&#99;&#x65;&#108;&#x61;&#x76;&#105;&#x2e;&#x66;&#x72;"
               message="copiée"
             />
-            . Je me ferai un plaisir de vous répondre.
+            {' '}et je me ferai un plaisir de vous répondre.
           </Paragraph>
           <Social>
             <SocialLink href="https://dribbble.com/vinzcelavi" dribbble>
