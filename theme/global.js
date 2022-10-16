@@ -9,7 +9,10 @@ export default createGlobalStyle`
     background-color: ${({ theme }) => theme.main.background};
     overflow-y: auto;
     overflow-x: hidden;
-    transition: all 0.45s ease;
+
+    &.light-mode {
+      transition: background-color 0.45s ease;
+    }
   }
 
   ::selection {
