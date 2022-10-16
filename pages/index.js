@@ -99,8 +99,8 @@ const Index = () => (
               </h2>
               <h3>2018 - aujourd‘hui</h3>
               <Paragraph>
-                Développement des interfaces utilisateurs et d‘applications web
-                modernes avec React et styled-components.
+                Design et développement front-end du widget de consentement
+                et des interfaces utilisateurs avec Figma, React et styled-components.
               </Paragraph>
             </Job>
             <Job>
