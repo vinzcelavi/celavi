@@ -74,7 +74,7 @@ const Index = () => (
         <Header position={['relative', 'relative', 'fixed']} />
       </GridCell>
 
-      <GridCell width={['auto', 'auto', '67%']}>
+      <GridCell width={['auto', 'auto', '67%']}> 
         <HeroWrapper>
           <Hero fontSize={[38, 62]}>
             Bonjour,
