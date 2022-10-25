@@ -29,6 +29,7 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head />
+        <script async src="https://cdn.splitbee.io/sb.js" />
         <body>
           <script src="noflash.js" />
           <Main />
