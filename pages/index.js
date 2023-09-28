@@ -74,12 +74,13 @@ const Index = () => (
         <Header position={['relative', 'relative', 'fixed']} />
       </GridCell>
 
-      <GridCell width={['auto', 'auto', '67%']}> 
+      <GridCell width={['auto', 'auto', '67%']}>
         <HeroWrapper>
           <Hero fontSize={[38, 62]}>
             Bonjour,
             <br />
-            Je suis <span>Product Designer</span> chez <a href="https://axeptio.eu">Axeptio</a> à Montpellier, depuis 2018.
+            Je suis <span>Frontend Designer</span> chez{' '}
+            <a href="https://axeptio.eu">Axeptio</a> à Montpellier, depuis 2018.
           </Hero>
 
           <Paragraph fontSize={[18, 20]}>
@@ -99,8 +100,9 @@ const Index = () => (
               </h2>
               <h3>2018 - aujourd‘hui</h3>
               <Paragraph>
-                Design et développement front-end du widget de consentement
-                et des interfaces utilisateurs avec Figma, React et styled-components.
+                Design et développement front-end du widget de consentement et
+                des interfaces utilisateurs avec Figma, React et
+                styled-components.
               </Paragraph>
             </Job>
             <Job>
@@ -169,8 +171,8 @@ const Index = () => (
             <CopyText
               value="&#118;&#105;&#110;&#x63;&#101;&#x6e;&#116;&#64;&#99;&#x65;&#108;&#x61;&#x76;&#105;&#x2e;&#x66;&#x72;"
               message="copiée"
-            />
-            {' '}et je me ferai un plaisir de vous répondre.
+            />{' '}
+            et je me ferai un plaisir de vous répondre.
           </Paragraph>
           <Social>
             <SocialLink href="https://dribbble.com/vinzcelavi" dribbble>
