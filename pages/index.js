@@ -129,7 +129,9 @@ const Index = () => (
             </Job>
             <Job>
               <h2>
-                <SwipeLink href="https://www.elium.tv">Elium</SwipeLink>
+                <SwipeLink href="https://heroiks.com/">
+                  HEROIKS (ex Elium)
+                </SwipeLink>
               </h2>
               <h3>2017</h3>
               <Paragraph>
