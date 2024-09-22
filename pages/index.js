@@ -130,7 +130,7 @@ const Index = () => (
             </Job>
             <Job>
               <h2>
-                <SwipeLink href="https://teads.tv">Teads</SwipeLink>
+                <SwipeLink href="https://teads.com">Teads</SwipeLink>
               </h2>
               <h3>2014 - 2016</h3>
               <Paragraph>

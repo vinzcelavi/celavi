@@ -22,7 +22,7 @@ export const lightTheme = {
     secondary: fonts.secondary
   },
   colors: {
-    primary: darken(0.08, colors.primary),
+    primary: colors.primary,
     dark: colors.dark,
     black: colors.black,
     white: colors.white
@@ -41,7 +41,7 @@ export const lightTheme = {
     boxShadowHover: rgba(colors.primary, 0.8),
   },
   swipeLink: {
-    bgHover: lighten(0.1, colors.primary),
+    bgHover: colors.primary,
   },
   toggle: {
     gradient: 'linear-gradient(#eeeeee, #fafafa)',
