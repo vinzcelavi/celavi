@@ -16,7 +16,8 @@
   "license": "MIT",
   "dependencies": {
     "@netlify/plugin-nextjs": "^4.25.0",
-    "next": "^12.0.5",
+    "eslint-config-next": "^12.3.4",
+    "next": "^12.3.4",
     "polished": "^1.9.2",
     "react": "^17.0.2",
     "react-copy-to-clipboard": "^5.0.1",
