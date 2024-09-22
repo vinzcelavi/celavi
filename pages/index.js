@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import media from 'styled-media-query';
 import { space, width, fontSize } from 'styled-system';
 import Grid, { GridCell } from '../components/Grid';
@@ -61,13 +61,35 @@ const Hero = styled.p`
       box-shadow: 0 1px 0 0 ${({ theme }) => theme.colors.primary};
     }
   }
-
-  > span {
-    color: ${({ theme }) => theme.colors.dark};
-    background: ${({ theme }) => theme.colors.primary};
-    outline: 4px solid ${({ theme }) => theme.colors.primary};
-  }
 `;
+
+const markerAnimation = keyframes`
+ 0% { width: 0%; opacity: 0; }
+ 100% { width: 100%; }
+`
+
+const MyJob = styled.span`
+  position: relative;
+  color: ${({ theme }) => theme.colors.dark};
+  white-space: nowrap;
+  
+  &::after {
+    z-index: -1;
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -4px;
+    width: 0;
+    height: 100%;
+    border-left: 8px solid ${({ theme }) => theme.colors.primary};
+    border-right: 8px solid ${({ theme }) => theme.colors.primary};
+    background: ${({ theme }) => theme.swipeLink.bgHover};
+    transform: rotate(-0.55deg);
+    transform-origin: 0 0;
+    animation: ${markerAnimation} 0.5s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+  }
+`
 
 const Index = () => (
   <Container width={['auto', '80%']} px={[30, 0]}>
@@ -81,7 +103,7 @@ const Index = () => (
           <Hero fontSize={[38, 62]}>
             Bonjour,
             <br />
-            Je suis <span>Front-End Designer</span> Freelance à Montpellier, depuis 2018.
+            Je suis <MyJob>Front-End Designer</MyJob> Freelance à Montpellier, depuis 2018.
           </Hero>
 
           <Paragraph fontSize={[18, 20]}>
