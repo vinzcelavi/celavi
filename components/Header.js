@@ -45,7 +45,7 @@ const Header = ({ position }) => (
 );
 
 Header.propTypes = {
-  position: PropTypes.string
+  position: PropTypes.array
 };
 
 export default Header;
