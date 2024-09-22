@@ -124,7 +124,7 @@ const Index = () => (
               </h2>
               <h3>2016 - 2018</h3>
               <Paragraph>
-                Intégration des maquettes de l‘application web avec ReactJS et
+                Intégration des maquettes de l‘application web avec React et
                 styled-components.
               </Paragraph>
             </Job>
@@ -137,7 +137,7 @@ const Index = () => (
                 UI/UX Design et intégration des designs sur le Dashboard de
                 gestion des campagnes.
                 <br />
-                Développement de web components AngularJS et Sass.
+                Développement de web components Angular et SASS.
               </Paragraph>
             </Job>
           </Jobs>
@@ -150,9 +150,9 @@ const Index = () => (
             <ListItem>CSS3</ListItem>
             <ListItem>HTML5</ListItem>
             <ListItem>Figma</ListItem>
+            <ListItem>React</ListItem>
             <ListItem>NextJS</ListItem>
             <ListItem>Remixrun</ListItem>
-            <ListItem>React.js</ListItem>
             <ListItem>Storybook</ListItem>
             <ListItem>JavaScript</ListItem>
             <ListItem>TypeScript</ListItem>
