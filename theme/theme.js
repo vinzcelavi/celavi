@@ -61,13 +61,14 @@ export const lightTheme = {
 export const darkTheme = {
   ...lightTheme,
   colors: {
+    ...lightTheme.colors,
     primary: colors.primary,
   },
   main: {
     text: colors.white,
     secondaryText: colors.grayLight,
     background: colors.dark,
-    selection: '#4d4426'
+    selection: '#4d4426',
   },
   header: {
     jobTitle: colors.primary,
@@ -77,7 +78,7 @@ export const darkTheme = {
     boxShadowHover: rgba(colors.primary, 0.8),
   },
   swipeLink: {
-    bgHover: darken(0.1, colors.primary),
+    bgHover: colors.primary,
   },
   toggle: {
     gradient: 'linear-gradient(#091236, #1E215D)',

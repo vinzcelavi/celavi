@@ -61,6 +61,12 @@ const Hero = styled.p`
       box-shadow: 0 1px 0 0 ${({ theme }) => theme.colors.primary};
     }
   }
+
+  > span {
+    color: ${({ theme }) => theme.colors.dark};
+    background: ${({ theme }) => theme.colors.primary};
+    outline: 4px solid ${({ theme }) => theme.colors.primary};
+  }
 `;
 
 const Index = () => (
