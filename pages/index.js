@@ -38,7 +38,7 @@ const Hero = styled.p`
   margin-bottom: 40px;
   font-family: ${({ theme }) => theme.fonts.primary};
   font-size: 30px;
-  line-height: 1.4;
+  line-height: 1.25;
   font-weight: 700;
   color: ${({ theme }) => theme.main.text};
   ${fontSize};
@@ -63,7 +63,7 @@ const Hero = styled.p`
   }
 
   > span {
-    white-space: nowrap;
+    white-space: normal;
   }
 `;
 
@@ -79,12 +79,11 @@ const Index = () => (
           <Hero fontSize={[38, 62]}>
             Bonjour,
             <br />
-            Je suis <span>Frontend Designer</span> chez{' '}
-            <a href="https://axeptio.eu">Axeptio</a> à Montpellier, depuis 2018.
+            Je suis <span>Front-End Designer</span> Freelance à Montpellier, depuis 2018.
           </Hero>
 
           <Paragraph fontSize={[18, 20]}>
-            Par le passé j‘ai notamment travaillé pour Swile, Elium et Teads. Je
+            Par le passé j‘ai notamment travaillé pour Axeptio, Swile et Teads. Je
             suis fan des interfaces web minimalistes et soignées. Mes passions
             se résument en 3 choses essentielles: le Squash, la bière et faire
             des blagues. Sans ordre de préférence.
@@ -129,17 +128,6 @@ const Index = () => (
             </Job>
             <Job>
               <h2>
-                <SwipeLink href="https://heroiks.com/">
-                  HEROIKS (ex Elium)
-                </SwipeLink>
-              </h2>
-              <h3>2017</h3>
-              <Paragraph>
-                Développement de web components AngularJS et Sass.
-              </Paragraph>
-            </Job>
-            <Job>
-              <h2>
                 <SwipeLink href="https://teads.tv">Teads</SwipeLink>
               </h2>
               <h3>2014 - 2016</h3>
@@ -157,11 +145,18 @@ const Index = () => (
           <Title fontSize={50}>Technologies</Title>
           <List ml={[0, 40]}>
             <ListItem>git</ListItem>
+            <ListItem>CSS3</ListItem>
+            <ListItem>HTML5</ListItem>
             <ListItem>Figma</ListItem>
-            <ListItem>ReactJS</ListItem>
+            <ListItem>NextJS</ListItem>
+            <ListItem>Remixrun</ListItem>
+            <ListItem>React.js</ListItem>
+            <ListItem>Storybook</ListItem>
+            <ListItem>JavaScript</ListItem>
+            <ListItem>TypeScript</ListItem>
+            <ListItem>CSS-in-JS</ListItem>
+            <ListItem>TailwindCSS</ListItem>
             <ListItem>Styled-components</ListItem>
-            <ListItem>Remixrun•NextJS•GatsbyJS</ListItem>
-            <ListItem>HTML5•CSS3•Javascript</ListItem>
           </List>
         </Section>
 

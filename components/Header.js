@@ -40,7 +40,7 @@ const Header = ({ position }) => (
   <StyledHeader position={position}>
     <ProfilePic />
     <Name>Vincent Bianciotto</Name>
-    <JobTitle>Frontend Designer</JobTitle>
+    <JobTitle>Front-End Designer</JobTitle>
   </StyledHeader>
 );
 
