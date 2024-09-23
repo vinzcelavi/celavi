@@ -61,6 +61,10 @@ const Hero = styled.p`
       box-shadow: 0 1px 0 0 ${({ theme }) => theme.colors.primary};
     }
   }
+
+  > span {
+    white-space: nowrap;
+  }
 `;
 
 const markerAnimation = keyframes`
@@ -103,7 +107,7 @@ const Index = () => (
           <Hero fontSize={[38, 62]}>
             Bonjour,
             <br />
-            Je suis <MyJob>Front-End Designer</MyJob> Freelance à Montpellier, depuis 2018.
+            Je suis <MyJob>Front-End Designer</MyJob> <span>à Montpellier</span> depuis plus de 10 ans.
           </Hero>
 
           <Paragraph fontSize={[18, 20]}>
