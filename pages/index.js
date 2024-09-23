@@ -63,6 +63,7 @@ const Hero = styled.p`
   }
 
   > span {
+    display: inline-block;
     white-space: nowrap;
   }
 `;
