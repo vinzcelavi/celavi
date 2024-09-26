@@ -22,15 +22,23 @@ const SocialLink = styled.a`
   }
 
   ${props =>
-    props.dribbble &&
+    props.insta &&
     `
     &:hover {
-      color: #ea4c89;
+      color: #C13584;
     }
   `}
 
   ${props =>
-    props.twitter &&
+    props.github &&
+    `
+    &:hover {
+      color: #2dba4e;
+    }
+  `}
+
+  ${props =>
+    props.x &&
     `
     &:hover {
       color: #00aced;
@@ -38,7 +46,13 @@ const SocialLink = styled.a`
   `}
 `;
 
-const Social = ({ children }) => <StyledSocial>{children}</StyledSocial>;
+const Social = ({ children }) => {
+  return (
+    <StyledSocial>
+      {children}
+    </StyledSocial>
+  )
+};
 
 Social.propTypes = {
   children: PropTypes.any

@@ -10,7 +10,6 @@ import Job, { Jobs } from '../components/Job';
 import SwipeLink from '../components/SwipeLink';
 import CopyText from '../components/CopyText';
 import List, { ListItem } from '../components/List';
-import Social, { SocialLink } from '../components/Social';
 
 const Container = styled.div`
   padding: 10vh 0 0;
@@ -200,15 +199,6 @@ const Index = () => (
             />{' '}
             et je me ferai un plaisir de vous répondre.
           </Paragraph>
-          <Social>
-            <SocialLink href="https://dribbble.com/vinzcelavi" dribbble>
-              Dribbble
-            </SocialLink>
-            <SocialLink href="https://github.com/vinzcelavi">Github</SocialLink>
-            <SocialLink href="https://www.twitter.com/vinzcelavi" twitter>
-              Twitter
-            </SocialLink>
-          </Social>
         </Section>
       </GridCell>
     </Grid>
