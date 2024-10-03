@@ -18,32 +18,8 @@ const SocialLink = styled.a`
   transition: color 0.25s ease;
 
   &:hover {
-    color: ${({ theme }) => theme.main.text};
+    color: ${({ theme }) => theme.colors.primary};
   }
-
-  ${props =>
-    props.insta &&
-    `
-    &:hover {
-      color: #C13584;
-    }
-  `}
-
-  ${props =>
-    props.github &&
-    `
-    &:hover {
-      color: #2dba4e;
-    }
-  `}
-
-  ${props =>
-    props.x &&
-    `
-    &:hover {
-      color: #00aced;
-    }
-  `}
 `;
 
 const Social = ({ children }) => {

@@ -48,12 +48,12 @@ const Header = ({ position }) => (
 
     <div>
       <Social>
-        <SocialLink href="https://instagram.com/vinzcelavi" insta>
-          Instagram
+        <SocialLink href="https://linkedin.com/in/vincent-bianciotto/">
+          LinkedIn
         </SocialLink>
-        <SocialLink href="https://github.com/vinzcelavi" github>Github</SocialLink>
-        <SocialLink href="https://x.com/vinzcelavi" x>
-          X
+        <SocialLink href="https://github.com/vinzcelavi">Github</SocialLink>
+        <SocialLink href="https://instagram.com/vinzcelavi">
+          Instagram
         </SocialLink>
       </Social>
     </div>
