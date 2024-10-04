@@ -1,6 +1,6 @@
-# Personal website
+# Vincent Bianciotto • UI/UX Designer & Front-End Developer
 
-* [celavi.fr](https://celavi.fr) - Vincent Bianciotto • UI/UX Designer & Front-End Developer
+* [celavi.fr](https://celavi.fr)
 
 ## Run locally
 
