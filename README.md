@@ -1,4 +1,5 @@
-# Vincent Bianciotto • UI/UX Designer & Front-End Developer
+# Vincent Bianciotto
+UI/UX Designer & Front-End Developer
 
 * [celavi.fr](https://celavi.fr)
 
