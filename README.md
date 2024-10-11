@@ -1,7 +1,7 @@
 # Vincent Bianciotto
 UI/UX Designer & Front-End Developer
 
-* [celavi.fr](https://celavi.fr)
+* [celavi.netlify.app](https://celavi.netlify.app/)
 
 ## Run locally
 
